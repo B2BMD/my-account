@@ -1,0 +1,53 @@
+@font-face {
+  font-family: Roboto_italic;
+  src: url(fonts/Roboto-Italic.ttf);
+}
+@font-face {
+  font-family: Roboto_light;
+  src: url(fonts/Roboto-Light.ttf);
+}
+@font-face {
+  font-family: Roboto_light_italic;
+  src: url(fonts/Roboto-LightItalic.ttf);
+}
+@font-face {
+  font-family: Roboto_medium;
+  src: url(fonts/Roboto-Medium.ttf);
+}
+@font-face {
+  font-family: Roboto_medium_italic;
+  src: url(fonts/Roboto-Italic.ttf);
+}
+@font-face {
+  font-family: Roboto_regular;
+  src: url(fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: Roboto_thin;
+  src: url(fonts/Roboto-Thin.ttf);
+}
+@font-face {
+  font-family: Roboto_thin_italic;
+  src: url(fonts/Roboto-ThinItalic.ttf);
+}
+@font-face {
+  font-family: Roboto_bold;
+  src: url(fonts/Roboto-Bold.ttf);
+}
+@font-face {
+  font-family: Roboto_bold_italic;
+  src: url(fonts/Roboto-BoldItalic.ttf);
+}
+@font-face {
+  font-family: Roboto_black;
+  src: url(fonts/Roboto-Black.ttf);
+}
+@font-face {
+  font-family: Roboto_black_italic;
+  src: url(fonts/Roboto-BlackItalic.ttf);
+}
+@font-face {
+    font-family: Password;
+    src: url(fonts/password.ttf);
+  }
+  

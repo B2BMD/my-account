@@ -1,0 +1,143 @@
+@import "./style-components/common";
+
+.common-pages{
+    header{
+        .navbar{
+            align-items: flex-end;
+            padding: 32px 102px 44px 40px;
+            .navbar-brand{
+                margin-right: 33px;
+            }
+            .form-inline{
+                display: flex;
+                align-items: center;
+            }
+            .bell-icon{
+                margin: 0 32px 0 52px;
+                cursor: pointer;
+            }
+           
+        }
+    }
+    .profile-icon{
+        display: flex;
+        align-items: center;
+        img{
+            margin-right: 20px;
+        }
+        .main{
+            font: 16px/20px $Roboto_medium;
+           
+            margin-bottom: 0;
+        }
+        .sub{
+            font: 10px/20px $Roboto_regular;
+            display: block;
+        }
+    }
+}
+.section-inner{
+    display: flex;
+  
+    .main-content-section{
+        padding: 0 41px 0 15px;
+        max-width: calc(100% - 205px);
+        width: 100%;
+        h2{
+            font: 28px/40px $Roboto_medium;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 25px;
+           .test-btns{
+               display: flex;
+               max-width: 48%;
+               flex: 0 0 48%;
+               justify-content: flex-end;
+               .btn{
+                   max-width: 199px;
+                   flex: 0 0 199px;
+                   white-space: nowrap;
+                   margin-right: 40px;
+               }
+               .search-bar{
+                position: relative;
+                max-width: 323px;
+                flex: 0 0 323px;
+                width: 100%;
+                img{
+                    position: absolute;
+                    left: 20px;
+                    top: 10px;
+                }
+            }
+           }
+        }
+        .main-content-section-inner{
+            background-color: #fff;
+            border-radius: 8px;
+            height: calc(100% - 88px);
+            &.faq{
+                padding: 25px 64px;
+                h5{
+                    font: 18px/20px $Roboto_medium;
+                    color: $Primarycolor;
+                    margin-bottom: 20px;
+                }
+                .content-area{
+                    background-color: #E5F6E8;
+                    border-radius: 10px;
+                    padding: 26px;
+                    margin-bottom: 56px;
+                    position: relative;
+                    &:after{
+                        position: absolute;
+                        top: -8px;
+                        left: 15px;
+                        content: "";
+                        width: 0; 
+                        height: 0; 
+                        border-left: 10px solid transparent;
+                        border-right: 10px solid transparent;
+                        border-bottom: 10px solid #F1F5F8;
+                    }
+                    p{
+                        font: 16px/24px $Roboto_regular;
+                        margin-bottom: 5px;
+                    }
+                    span{
+                        font: 12px/20px $Roboto_regular;
+                    }
+                }
+            }
+            .scroller-list{
+                max-height: 755px;
+                height: auto;
+                min-height: 130px;
+                overflow: hidden;
+                overflow-y: auto;
+                &::-webkit-scrollbar {
+                    width: 5px;
+                    border-radius: 2px;
+                    }
+                    &::-webkit-scrollbar-track {
+                    background: #fafafa;
+                    }
+                    &::-webkit-scrollbar-thumb {
+                    background: #bcbcbc;
+                    }
+            }
+               
+        }
+    }
+}
+
+@media(max-width: 1024px){
+    .section-inner{
+        .main-content-section{
+            max-width: calc(100% - 60px);
+            .main-content-section-inner.faq{
+                padding: 25px;
+            }
+        }
+    } 
+}

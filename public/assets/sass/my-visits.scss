@@ -1,0 +1,937 @@
+@import "./style-components/common";
+
+.common-pages{
+    overflow-x: hidden;
+    header{
+        .navbar{
+            align-items: flex-end;
+            padding: 32px 102px 44px 40px;
+            .navbar-brand{
+                margin-right: 33px;
+            }
+            .form-inline{
+                display: flex;
+                align-items: center;
+            }
+            .bell-icon{
+                margin: 0 32px 0 52px;
+                cursor: pointer;
+            }
+           
+        }
+    }
+    .profile-icon{
+        display: flex;
+        align-items: center;
+        img{
+            margin-right: 20px;
+        }
+        .main{
+            font: 16px/17px $Roboto_medium;
+           
+            margin-bottom: 0;
+        }
+        .sub{
+            font: 10px/20px $Roboto_regular;
+            display: block;
+        }
+    }
+}
+.section-inner{
+    display: flex;
+  
+    .main-content-section{
+        padding: 0 41px 0 15px;
+        max-width: calc(100% - 205px);
+        width: 100%;
+        &.visits-main-page{
+            .main-content-section-inner{
+                background-color: transparent;
+                .main-content-section-right{
+                    padding-left: 52px;
+                    .main-content-section-upper{
+                        background: #FFFFFF 0% 0% no-repeat padding-box;
+                        box-shadow: 0px 0px 10px #0000000D;
+                        border-radius: 20px;
+                        margin-bottom: 32px;
+                        .main-content-section-upper-top{
+                            background-color: $Primarycolor;
+                            padding: 20px 30px 0;
+                            border-radius: 20px 20px 0 0;
+                            h3{
+                                font: 24px/29px $Roboto_medium;
+                                color: #fff;
+                                margin-bottom: 20px;
+                            }
+                            .two-sections{
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: flex-start;
+                                .left-section{
+                                    padding: 0;
+                                    list-style: none;
+                                    margin: 0;
+                                    li{
+                                      font: 24px/29px $Roboto_regular;
+                                      color: #fff;
+                                      display: flex;
+                                      align-items: center;
+                                      margin-bottom: 15px;
+                                      img{
+                                          margin-right: 15px;
+                                      }
+                                    }
+                                }
+                                .right-section{
+                                    display: flex;
+                                    align-items: center;
+                                    max-width: 50%;
+                                    flex: 0 0 50%;
+                                    .btn{
+                                     font: 18px/24px $Roboto_regular;
+                                     max-width: 159px;
+                                     flex: 0 0 159px;
+                                     border-radius: 24px;
+                                     height: 48px;
+                                     &:last-child{
+                                         background-color: #569CCB;
+                                         color: #fff;
+                                         margin-left: 38px;
+                                     }
+                                    }
+                                }
+                            }
+                        }
+                        .main-content-section-upper-bottom{
+                            padding: 54px 40px 46px 30px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            .profile-icon{
+                                .main{
+                                    font: 22px/28px $Roboto_regular;
+                                    color: $Primarycolor;
+                                    margin-bottom: 8px;
+                                    display: block;
+                                }
+                                .sub{
+                                    font: 18px/22px $Roboto_medium;
+                                    color: #000;
+                                }
+                            } 
+                            .circle{
+                                height: 40px;
+                                width: 40px;
+                                border-radius: 50px;
+                                background: #8DC80E 0% 0% no-repeat padding-box;
+                                box-shadow: 0px 1px 8px #142E6E1A;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                            }
+                        }
+                    }
+                    .main-content-section-bottom{
+                        height: 365px;
+                        overflow: auto;
+                        background-color: #fff;
+                        border-radius: 20px;
+                        padding: 26px 32px;
+                        &::-webkit-scrollbar {
+                            width: 5px;
+                            border-radius: 2px;
+                            }
+                            &::-webkit-scrollbar-track {
+                            background: #fafafa;
+                            }
+                            &::-webkit-scrollbar-thumb {
+                            background: #bcbcbc;
+                            }
+                            h4{
+                                font: 16px/19px $Roboto_regular;
+                                margin-bottom: 12px;
+                            }
+                            table{
+                                th{
+                                    font: 16px/19px $Roboto_regular;
+                                    color: #9E9EA8;
+                                }
+                                tbody{
+                                    tr{
+                                        border-bottom: 1px solid #eaeaea
+                                    }
+                                }
+                              
+                                td{
+                                    font: 14px/18px $Roboto_regular;
+                                    color: #1B1B29;
+                                    padding: 10px 0;
+                                    &:first-child{
+                                        color: $Primarycolor;
+                                    }
+                                    span{
+                                        height: 38px;
+                                        width: 38px;
+                                        display: inline-flex;
+                                        border-radius: 10px;
+                                        margin-right: 15px;
+                                        background-color: #E5F6E8;
+                                        align-items: center;
+                                        justify-content: center;
+                                    }
+                                }
+                            }
+                    }
+                }
+               
+            } 
+        }
+        h2{
+            font: 28px/40px $Roboto_medium;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 25px;
+            .white-box{
+              max-width: calc(100% - 372px);
+              width: 100%;
+              background-color: #fff;
+              height: 40px;
+              border-radius: 8px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              position: relative;
+              .calender{
+                  position: absolute;
+                  right: 46px;
+                  top: -2px;
+              }
+              .date{
+                  font: 14px/20px $Roboto_regular;
+                  color: $Primarycolor;
+                  span{
+                    display: inline-block;
+                    margin: 0 22px;
+                  }
+                  img{
+                      cursor: pointer;
+                      position: relative;
+                      top: -1px;
+                  }
+              }
+            }
+        }
+        .main-content-section-inner{
+            background-color: #fff;
+            border-radius: 8px;
+            height: calc(100% - 88px);
+            display: flex;
+            .main-content-section-left{
+                max-width: 32%;
+                flex: 0 0 32%;
+                background: #FFFFFF 0% 0% no-repeat padding-box;
+                box-shadow: 0px 1px 8px #142E6E1A;
+                border-radius: 8px;
+                #leftTab{
+                    padding: 19px 24px 0 27px;
+                    border: none;
+                    margin-bottom: 10px;
+                    .nav-item{
+                        max-width: 107px;
+                        width: 100%;
+                        
+                        &:first-child{
+                            .nav-link{
+                                border-top-left-radius: 8px;
+                                border-bottom-left-radius: 8px;
+                                &.active{
+                                    border-radius: 8px 0 0 8px;
+                                }
+                            }
+                        }
+                        &:last-child{
+                            .nav-link{
+                                border-top-right-radius: 8px;
+                                border-bottom-right-radius: 8px;
+                                &.active{
+                                    border-radius: 0px 8px 8px 0px;
+                                }
+                            }
+                        }
+                        .nav-link{
+                            text-align: center;
+                            border: none;
+                            background-color: #E5F6E8;
+                            color: #2D7D00;
+                            border-radius: 0;
+                            &.active{
+                                background: #FFFFFF 0% 0% no-repeat padding-box;
+                                box-shadow: 0px 3px 6px #00000029;
+                                border-radius: 0px;
+                                color: $Primarycolor;
+                            }
+                        }
+                    }
+                }
+                .doctors-listing{
+                    padding: 0;
+                    list-style: none;
+                    height: 705px;
+                    overflow: auto;
+                    &::-webkit-scrollbar {
+                        width: 5px;
+                        border-radius: 2px;
+                        }
+                        &::-webkit-scrollbar-track {
+                        background: #fafafa;
+                        }
+                        &::-webkit-scrollbar-thumb {
+                        background: #bcbcbc;
+                        }
+                    .doctors-list{
+                        padding: 13px 22px 8.5px;
+                        margin: 5px 2px 9px 2px;
+                        border-radius: 8px; 
+                        cursor: pointer;  
+                        &:hover,  
+                        &.active{
+                            background-color: #E5F6E8;
+                        }    
+                        .profile-icon{
+                            margin-bottom: 20.5px;
+                            .sub{
+                                font: 16px/20px $Roboto_medium;
+                            }
+                            .main{
+                                font: 14px/17px $Roboto_regular;
+                                color: $Primarycolor;
+                            }
+                        }
+                        .time-list{
+                            display: flex;
+                            justify-content: space-between;
+                            span{
+                                font: 14px/20px $Roboto_regular;
+                                img{
+                                    margin-right: 4px;
+                                }
+                            }
+                        }
+                        .bottom-line{
+                            width: 100%;
+                            margin: 0 auto;
+                            border-bottom: 2px dashed #A2C0D4;  
+                            display: block;
+                            position: relative;
+                            bottom: -17px;
+                        }
+                    }
+                }
+            }
+            .main-content-section-right{
+                max-width: 68%;
+                flex: 0 0 68%;
+                .main-content-section-right-inner{
+                    .header{
+                        margin-bottom: 23px;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: flex-end;
+                        padding: 33px 93px 0 80px;
+                        .profile-icon{
+                            .sub{
+                                font: 16px/20px $Roboto_medium;
+                            }
+                            .main{
+                                font: 14px/17px $Roboto_regular;
+                                color: $Primarycolor;
+                            }
+                        }
+                        .case-status{
+                            .main{
+                                font: 16px/19px $Roboto_medium;
+                                display: inline-block;
+                                margin-right: 10px;
+                                color: $Primarycolor;
+                            }
+                            .sub{
+                                 font: 16px/19px $Roboto_medium;
+                                 color: #8DC80E;
+                            }
+                        }
+                    }
+                    #rightTab{
+                        max-width: 694px;
+                        margin: 0 auto;
+                        background-color: #E5F6E8;
+                        border-radius: 31px;
+                        padding: 10px;
+                        justify-content: space-between;
+                        margin-bottom: 10px;
+                        .nav-item{
+                            .nav-link{
+                                font: 14px/21px $Roboto_regular;
+                                padding: 10px 30px;
+                                color: #2D7D00;
+                                &.active{
+                                    background: #FFFFFF 0% 0% no-repeat padding-box;
+                                    box-shadow: 0px 3px 3px #00000029;
+                                    border-radius: 21px;
+                                    color: $Primarycolor;
+                                }
+                            }
+                        }
+                    }
+                    #rightTabContent{
+                        height: 596px;
+                        overflow: auto;
+                        padding: 0 50px 33px 80px;
+                    &::-webkit-scrollbar {
+                        width: 5px;
+                        border-radius: 2px;
+                        }
+                        &::-webkit-scrollbar-track {
+                        background: #fafafa;
+                        }
+                        &::-webkit-scrollbar-thumb {
+                        background: #bcbcbc;
+                        }
+                        .sub-heading{
+                            margin-top: 21px;
+                            font: 13px/15px $Roboto_bold;
+                            color: #2D7D00;
+                            border-bottom: 1px solid #F1F5F8;
+                            padding-bottom: 10px;
+                            margin-bottom: 10px;
+                            &.alergy{
+                                margin-bottom: 0;
+                            }
+                        }
+                        .symptoms-listing{
+                            padding: 0;
+                            margin: 0;
+                            list-style: none;
+                            display: flex;
+                            justify-content: space-between;
+                            .symptoms-list{
+                                max-width: 23%;
+                                padding: 9px;
+                                border-radius: 6px;
+                                background: #E5F6E8 0% 0% no-repeat padding-box;
+                                box-shadow: 0px 3px 3px #00000029;
+                                &.image-uploader{
+                                    position: relative;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    input{
+                                        position: absolute;
+                                        width: 100%;
+                                        height: 100%;
+                                        left: 0;
+                                        top: 0;
+                                        opacity: 0;
+                                        cursor: pointer;
+                                    }
+                                    img{
+                                        width: 50px !important;
+                                        height: 50px !important;
+                                        object-fit: contain;
+                                        display: block;
+                                        margin: 0 auto;
+                                    }
+                                    .sub{
+                                        text-align: center;
+                                    }
+                                    a{
+                                        cursor: pointer;
+                                        &:hover{
+                                            text-decoration: none;
+                                        }
+                                    }
+                                }
+                                span{
+                                    display: block;
+                                    color: $Primarycolor;;
+                                    &.main{
+                                        font: 15px/17px $Roboto_medium;
+                                        height: 110px;
+                                    }
+                                    &.sub{
+                                        margin-top: 5px;
+                                        font: 14px/20px $Roboto_regular;
+                                    }
+                                }
+                            }
+                        }
+                        .diagnosis-data{
+                            font: 16px/24px $Roboto_regular;
+                            color: $Primarycolor;
+                        }
+                        .vitals-listing{
+                            display: flex;
+                            justify-content: space-between;
+                            padding: 0;
+                            list-style: none;
+                            .main{
+                                font: 16px/27px $Roboto_medium;
+                                color: #8DC80E;
+                            }
+                            .sub{
+                                display: block;
+                                color: $Primarycolor;
+                                font: 24px/38px $Roboto_regular;
+                                small{
+                                    font: 16px/19px $Roboto_regular;
+                                }
+                            }
+                        }
+                        .alergies-listing{
+                            padding: 0;
+                            list-style: none;
+                            .alergies-list{
+                                display: flex;
+                                justify-content: space-between;
+                                font: 16px/24px $Roboto_regular;
+                                color: $Primarycolor;
+                                padding: 10px 0;
+                                border-bottom: 1px solid #F1F5F8;
+                                .main{
+                                    font-family: $Roboto_medium;
+                                }
+                                &:last-child{
+                                    border-bottom: none;
+                                }
+                            }
+                        }
+                        
+                        #prescription{
+                            .tagline{
+                                font: 16px/24px $Roboto_regular;
+                                color: #2D7D00;
+                                margin: 27px 0 35px;
+                            }
+                            .prescription-detail{
+                                padding: 0;
+                                list-style: none;
+                                background-color: #E5F6E8;
+                                border-radius: 11px;
+                                .prescription-detail-list{
+                                    padding: 31px 69px 31px 85px;
+                                    display: flex;
+                                    align-items: flex-start;
+                                    border-bottom: 2px dashed #C2E0F7;
+                                    position: relative;
+                                    .circle{
+                                        height: 30px;
+                                        width: 30px;
+                                        background-color: #fff;
+                                        border-radius: 50px;
+                                        position: absolute;
+                                        bottom: -15px;
+                                        &.circle-left{
+                                            left: -15px;
+                                        }
+                                        &.circle-right{
+                                            right: -15px;
+                                        }
+                                    }
+                                    &:last-child{
+                                        border-bottom: none;
+                                    }
+                                    img{
+                                        margin-right: 20px;
+                                    }
+                                    h4{
+                                        font: 20px/24px $Roboto_regular;
+                                        color: #2D7D00;
+                                        margin-bottom: 21px;
+                                    }
+                                    .two-sections{
+                                        display: flex;
+                                        .left{
+                                            margin-right: 30px;;
+                                        }
+                                        .main{
+                                            font: 16px/19px $Roboto_regular;
+                                            color: #90A1AC;
+                                        }
+                                        .sub{
+                                            font: 18px/22px $Roboto_regular;
+                                            color: #8DC80E;
+                                            display: block;
+                                            margin: 5px 0 21px;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        
+                        #provider{
+                            .provider-header{
+                                margin-top: 21px;
+                                display: flex;
+                                align-items: flex-end;
+                                img{
+                                    margin-right: 44px;
+                                }
+                           
+                            }
+                            .form-group{
+                                width: 100%;
+                                display: flex;
+                                margin-bottom: 0;
+                                background: #E5F6E8 0% 0% no-repeat padding-box;
+                                box-shadow: 0px 3px 3px #C1CFD933;
+                                border-radius: 10px;
+                                padding: 21px 37px;
+                                &.mb15{
+                                    margin-bottom: 15px;
+                                }
+                                label{
+                                    font: 18px/22px $Roboto_regular;
+                                    color: #2D7D00;
+                                    margin: 0 42px 0 0;
+                                }
+                                textarea,
+                                input{
+                                    border: none;
+                                    padding: 0;
+                                    font: 18px/22px $Roboto_regular;
+                                    color: #8DC80E;
+                                    height: auto;
+                                    margin: 0;
+                                    background-color: transparent;
+                                }
+                            }
+                            h2{
+                                font: 20px/24px $Roboto_medium;
+                                margin: 30px 0 9px;
+                                color: $Primarycolor;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width: 1366px){
+    .section-inner {
+        .main-content-section{
+            &.visits-main-page{
+                .main-content-section-inner{
+                    .main-content-section-right{
+                        padding-left: 32px;
+                        .main-content-section-upper {
+                            .main-content-section-upper-top {
+                                .two-sections {
+                                    .right-section {
+                                        .btn{
+                                            max-width: 120px;
+                                        }
+                                    }
+                                    .left-section {
+                                        li{
+                                            font-size: 20px;
+                                        }
+                                    }
+                                }
+                            }
+                            .main-content-section-upper-bottom {
+                                padding: 54px 20px 46px 20px;
+                                .profile-icon {
+                                    .main{
+                                        font-size: 14px;
+                                    }
+                                    .sub{
+                                        font-size: 13px;
+                                    }
+                                }
+                                .btn{
+                                    &.green{
+                                        max-width: 165px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .main-content-section-inner{
+                .main-content-section-left{
+                    #leftTab {
+                        .nav-item{
+                            max-width: 33.33%;
+                        }
+                    }
+                    .doctors-listing{
+                        margin-bottom: 30px;
+                    }
+                }
+                .main-content-section-right{
+                    .main-content-section-right-inner{
+                        #rightTab{
+                            max-width: 600px;
+                        }
+                        #rightTabContent {
+                            .symptoms-listing {
+                                .symptoms-list{
+                                    max-width: 23%;
+                                }
+                            }
+                            #prescription {
+                                .prescription-detail {
+                                    .prescription-detail-list{
+                                        padding: 31px 40px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }   
+}
+@media(max-width: 1199px){
+    .section-inner {
+        .main-content-section{
+            &.visits-main-page{
+                padding: 0 20px 0 15px;
+                .main-content-section-inner{
+                    // justify-content: space-between;
+                    .main-content-section-right{
+                        padding-left: 15px;
+                        .main-content-section-upper {
+                            .main-content-section-upper-top {
+                                .two-sections {
+                                    .right-section {
+                                        justify-content: flex-end;
+                                        .btn{
+                                            font-size: 14px;
+                                            max-width: 90px;
+                                            padding: 10px;
+                                            height: 32px;
+                                            &:last-child{
+                                                margin-left: 10px;
+                                            }
+                                        }
+                                    }
+                                    .left-section {
+                                        li{
+                                            font-size: 18px;
+                                        }
+                                    }
+                                }
+                            }
+                            .main-content-section-upper-bottom {
+                                .profile-icon {
+                                    padding-right: 10px;
+                                    img{
+                                        margin-right: 0;
+                                        width: 90px;
+                                        height: 90px;
+                                    }
+                                }
+                                .btn{
+                                    &.green{
+                                        font-size: 12px;
+                                        max-width: 145px;
+                                    }
+                                }
+                            }
+                        }
+                        .main-content-section-bottom{
+                            table{
+                                overflow-x: auto;
+                                white-space: nowrap;
+                                display: block;
+                                td,
+                                th{
+                                    padding: 10px;
+                                }
+                                &::-webkit-scrollbar {
+                                    height: 5px;
+                                    border-radius: 2px;
+                                }
+                                &::-webkit-scrollbar-track {
+                                    background: #fafafa;
+                                }
+                                &::-webkit-scrollbar-thumb {
+                                    background: #bcbcbc;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .main-content-section-inner{
+                .main-content-section-left{
+                    #leftTab {
+                        .nav-item {
+                            .nav-link{
+                                padding: 10px 5px;
+                            }
+                        }
+                    }
+                }
+                .main-content-section-right{
+                    .main-content-section-right-inner{
+                        .header{
+                            padding: 33px 30px 0 30px;
+                        }
+                        #rightTab{
+                            max-width: 100%;
+                            margin: 0 30px;
+                            .nav-item{
+                                .nav-link{
+                                    padding: 10px
+                                }
+                            }
+                        }
+                        #rightTabContent {
+                            padding: 0 30px 33px 30px;
+                            #prescription {
+                                .prescription-detail {
+                                    .prescription-detail-list{
+                                        padding: 31px 40px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }   
+}
+@media(max-width: 1024px){
+    .section-inner {
+        .main-content-section{
+            &.visits-main-page{
+                max-width: calc(100% - 55px);
+            }
+            max-width: 100%;
+        }
+    }   
+}
+@media(max-width: 991px){
+    
+    .section-inner {
+        .main-content-section{
+            &.visits-main-page{
+                max-width: calc(100% - 55px);
+                .main-content-section-inner {
+                    .main-content-section-right {
+                        .main-content-section-upper {
+                            .main-content-section-upper-top {
+                                padding: 20px 15px 0;
+                                h3{
+                                    font-size: 20px;
+                                }
+                                .two-sections {
+                                    .left-section {
+                                        li{
+                                            font-size: 16px;
+                                        }
+                                    }
+                                }
+                            }
+                            .main-content-section-upper-bottom{
+                                padding: 24px 15px 20px 10px;
+                                .profile-icon{
+                                    .main{
+                                        font-size: 12px;
+                                    }
+                                    .sub{
+                                        font-size: 11px;
+                                    }
+                                }
+                                .btn.green{
+                                    font-size: 10px;
+                                    max-width: 135px;
+                                }
+                            }
+                            .main-content-section-bottom{
+                                padding: 16px 32px;
+                            }
+                        }
+                    }
+                }
+            }
+            h2{
+                .white-box{
+                    max-width: calc(100% - 200px);
+                }
+            }
+            .main-content-section-inner{
+                .main-content-section-right{
+                    .main-content-section-right-inner{
+                        .header{
+                            padding: 33px 15px 0 15px;
+                            .case-status {
+                                .main{
+                                    font: 13px/19px $Roboto_medium;
+                                    margin-right: 4px;
+                                }
+                                .sub{
+                                    font: 13px/19px $Roboto_medium;
+                                }
+                            }
+                        }
+                        #rightTab{
+                            margin: 0 10px;
+                        }
+                        #rightTabContent{
+                            padding: 0 20px 33px 20px;
+                            .symptoms-listing {
+                                .symptoms-list{
+                                    padding: 5px;
+                                    max-width: 23%;
+                                    span{
+                                        &.main{
+                                            font: 13px/15px $Roboto_medium;
+                                        }
+                                        &.sub{
+                                            font: 12px/20px $Roboto_regular;
+                                        }
+                                    }
+                                }
+                            }
+                            #prescription {
+                                .prescription-detail {
+                                    .prescription-detail-list{
+                                        padding: 20px 15px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .main-content-section-left{
+                    #leftTab{
+                        padding: 12px 12px 0 12px;
+                        .nav-item{
+                            .nav-link{
+                                font-size: 14px;
+                            }
+                        }
+                    }
+                    .doctors-listing{
+                        .doctors-list{
+                            padding: 13px 12px 8.5px;
+                            .profile-icon {
+                                img{
+                                    margin-right: 7px;
+                                    width: 36px;
+                                    height: 36px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }   
+}
