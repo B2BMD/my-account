@@ -12,7 +12,9 @@
         "fideloper/proxy": "^4.4",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
+        "jeremy-dunn/php-fedex-api-wrapper": "^5.0",
         "laravel/framework": "^8.40",
+        "laravel/sanctum": "^2.11",
         "laravel/tinker": "^2.5",
         "phpmailer/phpmailer": "^6.5",
         "stripe/stripe-php": "^7.89"
