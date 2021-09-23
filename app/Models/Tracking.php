@@ -9,6 +9,5 @@ class Tracking extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['case_number', 'shipment_provider', 'shipment_tracking_number', 'tracking_history', 'geocoding'];
-    
+    protected $fillable = ['case_number', 'shipment_provider', 'shipment_tracking_number', 'tracking_history', 'geolocation_id'];
 }
