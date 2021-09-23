@@ -99,12 +99,12 @@ class TrackingController extends BaseController
 				$geolocation_id =
 				(
 					(
-						empty($geolocation) ? 0
+						empty($geolocation) ? 1
 						: (
 							is_object($geolocation) ?
-							('Illuminate\Database\Eloquent\Collection' == get_class($geolocation) ? (is_object($geolocation->first()) ? $geolocation->first()->id : 0) : 0)
+							('Illuminate\Database\Eloquent\Collection' == get_class($geolocation) ? (is_object($geolocation->first()) ? $geolocation->first()->id : 1) : 1)
 							:
-							('App\Models\Geolocation' == get_class($geolocation) ? $geolocation->id : 0)
+							('App\Models\Geolocation' == get_class($geolocation) ? $geolocation->id : 1)
 						)
 					)
 				);
@@ -117,7 +117,7 @@ class TrackingController extends BaseController
 					],
 					[
 						'tracking_history' => json_encode($history),
-						'geolocation_id' => (!empty($geolocation) && is_object($geolocation->first()) && !empty($geolocation->first()->id)) ? $geolocation->first()->id : 0,
+						'geolocation_id' => (!empty($geolocation) && is_object($geolocation->first()) && !empty($geolocation->first()->id)) ? $geolocation->first()->id : 1,
 					]
 				);
 

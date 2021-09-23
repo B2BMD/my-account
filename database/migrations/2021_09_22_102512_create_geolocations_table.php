@@ -20,6 +20,8 @@ class CreateGeolocationsTable extends Migration
             $table->unique(['city', 'state', 'zip_code']);
             $table->timestamps();
         });
+
+        Artisan::call('db:seed', ['--class' => 'GeolocationTableSeeder']);
     }
 
     /**
