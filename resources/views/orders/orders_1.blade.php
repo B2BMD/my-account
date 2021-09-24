@@ -74,14 +74,14 @@
                 <div class="main-content-section-inner order-detail">
                     <div class="main-content-section-upper">
                     @if(!empty($orderDetail))
-                        @foreach($productDetail as $product)
-                            <div class="main-content-section-left">
+                        <div class="main-content-section-left">
+                            @foreach($productDetail as $product)
                                 <div class="main-content-section-left-inner">
                                     <h2><span class="main">
                                         <a href="{{ env('APP_URL') }}/orders">
                                         <img src="{{ asset('assets/images/orders/icon1.png') }}" alt="arrow">{{$product->name?$product->name:''}}</span></a>
                                         <span class="sub">
-                                            <span class="dot"></span>{{$orderDetail->status?ucwords($orderDetail->status):''}} Order</span>
+                                            <span class="dot"></span>{{$orderDetail->status ? ucwords($orderDetail->status) : ''}} Order</span>
                                     </h2>
                                     <div class="two-sections">
                                         <div class="left-section">
@@ -124,8 +124,8 @@
                                       
                                     </div>
                                 </div>
-                            </div>
-                        @endforeach
+                            @endforeach
+                        </div>
                     @endif
                         <div class="main-content-section-right">
                             <div class="main-content-section-right-inner">

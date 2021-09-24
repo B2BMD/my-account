@@ -134,7 +134,6 @@ class TrackingController extends BaseController
 		$geocoding = (!empty($geolocation) && is_object($geolocation->first()) && !empty($geolocation->first()->geocoding)) ? $geolocation->first()->geocoding : null;
 
 		return $this->sendResponse(['tracking_history' => json_decode($tracking->first()->tracking_history, true), 'geocoding' => json_decode($geocoding, true)], 'Tracking fetched from cache.');
-		// return $this->sendError('Unknown error!');
 	}
 
 	/**

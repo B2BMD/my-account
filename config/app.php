@@ -1,7 +1,66 @@
 <?php
 
-return [
+function _d($var)
+{
+    $bt = debug_backtrace();
+    echo '<b>' .
+        $bt[0]['file'] .
+        ' -> ' .
+        $bt[0]['line'] .
+        '</b><br>';
 
+    if (!empty($bt[1])) {
+        echo isset($bt[1]['function']) ? '<i>Last function called:</i> ' . $bt[1]['function'] . '<br>' : '';
+        echo isset($bt[1]['line']) ? '<i>Called from: </i> ' . $bt[1]['file'] . ' -> line: ' . $bt[1]['line'] . '<br>' : '';
+        echo isset($bt[1]['class']) ? '<i>Inside Class:</i> ' . $bt[1]['class'] . '<br>' : '';
+        echo isset($bt[0]['args']) ? '<i>Passed</i><b> ' . count($bt[0]['args']) . '</b><i> args</i><br>' : '';
+    }
+
+    foreach ($bt[0]['args'] as $key => $value) {
+        if (empty($value)) {
+            echo '<i>Arg:</i><b> ' . ($key + 1) . '</b><pre>';
+            var_dump($value);
+            echo '</pre><br>';
+        } else {
+            echo '<i>Arg:</i><b> ' . ($key + 1) . '</b><pre>';
+            print_r($value);
+            echo '</pre><br>';
+        }
+    }
+}
+
+function _dd($var)
+{
+    $bt = debug_backtrace();
+    echo '<b>' .
+        $bt[0]['file'] .
+        ' -> ' .
+        $bt[0]['line'] .
+        '</b><br>';
+
+    if (!empty($bt[1])) {
+        echo isset($bt[1]['function']) ? '<i>Last function called:</i> ' . $bt[1]['function'] . '<br>' : '';
+        echo isset($bt[1]['line']) ? '<i>Called from: </i> ' . $bt[1]['file'] . ' -> line: ' . $bt[1]['line'] . '<br>' : '';
+        echo isset($bt[1]['class']) ? '<i>Inside Class:</i> ' . $bt[1]['class'] . '<br>' : '';
+        echo isset($bt[0]['args']) ? '<i>Passed</i><b> ' . count($bt[0]['args']) . '</b><i> args</i><br>' : '';
+    }
+
+    foreach ($bt[0]['args'] as $key => $value) {
+        if (empty($value)) {
+            echo '<i>Arg:</i><b> ' . ($key + 1) . '</b><pre>';
+            var_dump($value);
+            echo '</pre><br>';
+        } else {
+            echo '<i>Arg:</i><b> ' . ($key + 1) . '</b><pre>';
+            print_r($value);
+            echo '</pre><br>';
+        }
+    }
+
+    exit();
+}
+
+return [
     /*
     |--------------------------------------------------------------------------
     | Application Name
@@ -26,7 +85,7 @@ return [
     |
     */
 
-    'env' => env('APP_ENV', 'production'),
+    'env' => env('APP_ENV', 'local'),
 
     /*
     |--------------------------------------------------------------------------
@@ -39,7 +98,7 @@ return [
     |
     */
 
-    'debug' => (bool) env('APP_DEBUG', false),
+    'debug' => (bool) env('APP_DEBUG', true),
 
     /*
     |--------------------------------------------------------------------------
@@ -135,10 +194,7 @@ return [
     */
 
     'providers' => [
-
-        /*
-         * Laravel Framework Service Providers...
-         */
+        // Laravel Framework Service Providers...
         Illuminate\Auth\AuthServiceProvider::class,
         Illuminate\Broadcasting\BroadcastServiceProvider::class,
         Illuminate\Bus\BusServiceProvider::class,
@@ -161,23 +217,16 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
-        
 
-        /*
-         * Package Service Providers...
-         */
+        // Package Service Providers...
 
-        /*
-         * Application Service Providers...
-         */
+        // Application Service Providers...
         App\Providers\AppServiceProvider::class,
         App\Providers\AuthServiceProvider::class,
         // App\Providers\BroadcastServiceProvider::class,
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-        LaravelShipStation\ShipStationServiceProvider::class
-
-
+        LaravelShipStation\ShipStationServiceProvider::class,
     ],
 
     /*
@@ -192,7 +241,6 @@ return [
     */
 
     'aliases' => [
-
         'App' => Illuminate\Support\Facades\App::class,
         'Arr' => Illuminate\Support\Arr::class,
         'Artisan' => Illuminate\Support\Facades\Artisan::class,
@@ -230,7 +278,5 @@ return [
         'URL' => Illuminate\Support\Facades\URL::class,
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
-
     ],
-
 ];
