@@ -178,9 +178,9 @@
                         </div>
                     </div>
                     <div class="track">
-
                     @if(!empty($orderDetail))
-                        <h5>Tracking Number{{empty($orderDetail->tracking) ? '' : ': ' . $orderDetail->tracking['tracking_history']['TrackID']}}</h5>
+                        @if(empty($orderDetail->tracking['error']))
+                            <h5>Tracking Number{{empty($orderDetail->tracking) ? '' : ': ' . $orderDetail->tracking['tracking_history']['TrackID']}}</h5>
                             <div class="destiny mb-0" style='height: unset;'>
                                 <ul id="tracking-summary-section" class="text-center mx-auto">
                                     <li class="active step0">
@@ -208,6 +208,20 @@
                                     </li>
                                 </ul>
                             </div>
+                        @else
+                            <h5>We found some errors retrieving your tracking data</h5>
+                            <div class="destiny mb-0" style='height: unset;'>
+                                <ul id="tracking-summary-section" class="text-center mx-auto">
+                                    <li class="active step0">
+                                        <div class="upper-content bar-content">
+                                                <h5>We can't retrieve your tracking information</h5>
+                                                <p>Try again later, if the problem persists, please contact us</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+
+                        @endif
                         @if(!empty($orderDetail->tracking['tracking_history']['TrackDetail']))
                             <div class="row mb-4">
                                 <div class="col-12">
