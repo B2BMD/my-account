@@ -215,7 +215,7 @@
                                     <li class="active step0">
                                         <div class="upper-content bar-content">
                                                 <h5>We can't retrieve your tracking information</h5>
-                                                <p>Try again later, if the problem persists, please contact us</p>
+                                                <p>Try again later, if problem persists please contact us</p>
                                         </div>
                                     </li>
                                 </ul>

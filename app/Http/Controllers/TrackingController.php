@@ -58,20 +58,25 @@ class TrackingController extends BaseController
 		$token = env('B2BMD_API_KEY');
 		$api_path = env('B2BMD_API_TRACKING_PATH') . '?fn=get_tracking_history&tracking_number=' . $shipment_tracking_number;
 
-		$result =
-			$client->request(
-				'GET',
-				$api_path,
-				['headers' => ['Authorization' => "Bearer {$token}"],
-				]
-			)->getBody()->getContents();
+		try {
+			$result =
+				$client->request(
+					'GET',
+					$api_path,
+					['headers' => ['Authorization' => "Bearer {$token}"],
+					]
+				)->getBody()->getContents();
+			$result = @json_decode($result, true);
 
-		$result = @json_decode($result, true);
-
-		if (!empty($result) && !empty($result['success']) && !empty($result['data'])) {
-			return $result['data'];
+			if (empty($result) || empty($result['data'])) {
+				$result = ['success' => false, 'error' => 'Null value returned!'];
+			} else {
+				$result = $result['data'];
+			}
+		} catch (\Throwable $e) {
+			$result = ['success' => false, 'error' => $e->getMessage()];
 		}
 
-		return false;
+		return $result;
 	}
 }
