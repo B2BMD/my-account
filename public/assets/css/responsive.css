@@ -730,6 +730,7 @@
     }
     .section-inner .main-content-section .main-content-section-inner.order-detail .track .destiny .line #progressbar .bar-content p {
       font: 10px/8px Roboto_regular,sans-serif;
+      line-height: 15px;
     }
     .section-inner .main-content-section .main-content-section-inner-test{
       display: block;

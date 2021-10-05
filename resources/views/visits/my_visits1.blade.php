@@ -99,25 +99,25 @@
                         <ul class="nav nav-tabs" id="leftTab" role="tablist">
                             <li class="nav-item" role="presentation">
                                 <a class="nav-link <?php if (!empty($yearArray) && empty($monthArray) && empty($weekArray)) {
-                                    echo 'active';
-                                } ?>" id="year-tab" data-toggle="tab" href="#year" role="tab" aria-controls="year" aria-selected="true">Year</a>
+    echo 'active';
+} ?>" id="year-tab" data-toggle="tab" href="#year" role="tab" aria-controls="year" aria-selected="true">Year</a>
                             </li>
                             <li class="nav-item" role="presentation">
                                 <a class="nav-link  <?php if (!empty($monthArray) && empty($weekArray)) {
-                                    echo 'active';
-                                } ?>" id="month-tab" data-toggle="tab" href="#month" role="tab" aria-controls="month" aria-selected="false">Month</a>
+    echo 'active';
+} ?>" id="month-tab" data-toggle="tab" href="#month" role="tab" aria-controls="month" aria-selected="false">Month</a>
                             </li>
                             <li class="nav-item" role="presentation">
                                 <a class="nav-link   <?php if (!empty($weekArray) && empty($yearArray) && empty($monthArray)) {
-                                    echo 'active';
-                                } ?>" id="week-tab" data-toggle="tab" href="#week" role="tab" aria-controls="week" aria-selected="false">Week</a>
+    echo 'active';
+} ?>" id="week-tab" data-toggle="tab" href="#week" role="tab" aria-controls="week" aria-selected="false">Week</a>
                             </li>
                         </ul>
                         <div class="tab-content" id="leftTabContent">
                             {{-- different docs --}}
                             <div class="tab-pane fade  <?php if (!empty($yearArray) && empty($monthArray) && empty($weekArray)) {
-                                echo 'show active';
-                            } ?>" id="year" role="tabpanel" aria-labelledby="year-tab">
+    echo 'show active';
+} ?>" id="year" role="tabpanel" aria-labelledby="year-tab">
                                 {{-- Year Tab --}}
                                 <ul class="doctors-listing">
                                     @php $count=0; @endphp
@@ -151,8 +151,8 @@
                             </div>
 
                             <div class="tab-pane fade  <?php if (!empty($monthArray) && empty($weekArray)) {
-                                echo 'show active';
-                            } ?>" id="month" role="tabpanel" aria-labelledby="month-tab">
+    echo 'show active';
+} ?>" id="month" role="tabpanel" aria-labelledby="month-tab">
                                 {{-- Month Tab --}}
                                 <ul class="doctors-listing">
                                     @php $count=0; @endphp
@@ -186,8 +186,8 @@
                             </div>
 
                             <div class="tab-pane fade  <?php if (!empty($weekArray) && empty($yearArray) && empty($monthArray)) {
-                                echo 'show active';
-                            } ?>" id="week" role="tabpanel" aria-labelledby="week-tab">
+    echo 'show active';
+} ?>" id="week" role="tabpanel" aria-labelledby="week-tab">
                                 {{-- Week Tab --}}
                                 <ul class="doctors-listing">
                                     @php $count=0; @endphp
@@ -283,6 +283,7 @@
                                             <span class="sub">Yes, I work out 3 times a week.</span>
                                         </li> -->
                                     </ul>
+                                    <!--
                                     <div class="sub-heading">
                                         Upload Faceshot and PhotoId
                                     </div>
@@ -332,6 +333,7 @@
                                          
                                         </li>
                                     </ul>
+                                    -->
                                     <div class="sub-heading">
                                         Upload Images
                                     </div>
@@ -650,7 +652,7 @@
             </div>
         </div>
     </section>
-<input type="hidden" id="user_data" value='<?php echo json_encode($userdata) ?>'/>
+<input type="hidden" id="user_data" value='<?php echo json_encode($userdata); ?>'/>
     {{-- including the scripts --}}
     @include('js_scripts.bottom_scripts')
     <script>

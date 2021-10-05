@@ -84,10 +84,9 @@
         <div class="section-inner">
 
             @include('layout.sidebar')
-
             <div class="main-content-section visits-main-page">
                 <h2>My Visits
-                    <!-- <div class="white-box"> -->
+                    {{-- <div class="white-box"> --}}
                     {{-- <div class="date"><img src="{{asset('assets/images/visits/left-arrow.png')}}" alt="left-arrow">
                             <span>22 April 2021</span><img src="{{asset('assets/images/visits/right-arrow.png')}}" alt="right-arrow"></div><a class="calender"href="javascript:void(0)">
                             <img src="{{asset('assets/images/visits/calender.png')}}" alt="calender"></a>
@@ -97,26 +96,18 @@
                     <div class="main-content-section-left">
                         <ul class="nav nav-tabs" id="leftTab" role="tablist">
                             <li class="nav-item" role="presentation">
-                                <a class="nav-link <?php if (!empty($yearArray) && empty($monthArray) && empty($weekArray)) {
-                                    echo 'active';
-                                } ?>" id="year-tab" data-toggle="tab" href="#year" role="tab" aria-controls="year" aria-selected="true">Year</a>
+                                <a class="nav-link @if(!empty($yearArray) && empty($monthArray) && empty($weekArray)) active @endif" id="year-tab" data-toggle="tab" href="#year" role="tab" aria-controls="year" aria-selected="true">Year</a>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <a class="nav-link  <?php if (!empty($monthArray) && empty($weekArray)) {
-                                    echo 'active';
-                                } ?>" id="month-tab" data-toggle="tab" href="#month" role="tab" aria-controls="month" aria-selected="false">Month</a>
+                                <a class="nav-link @if(!empty($monthArray) && empty($weekArray)) active @endif" id="month-tab" data-toggle="tab" href="#month" role="tab" aria-controls="month" aria-selected="false">Month</a>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <a class="nav-link   <?php if (!empty($weekArray) && empty($yearArray) && empty($monthArray)) {
-                                    echo 'active';
-                                } ?>" id="week-tab" data-toggle="tab" href="#week" role="tab" aria-controls="week" aria-selected="false">Week</a>
+                                <a class="nav-link   @if(!empty($weekArray) && empty($yearArray) && empty($monthArray)) active @endif" id="week-tab" data-toggle="tab" href="#week" role="tab" aria-controls="week" aria-selected="false">Week</a>
                             </li>
                         </ul>
                         <div class="tab-content" id="leftTabContent">
                             {{-- different docs --}}
-                            <div class="tab-pane fade  <?php if (!empty($yearArray) && empty($monthArray) && empty($weekArray)) {
-                                echo 'show active';
-                            } ?>" id="year" role="tabpanel" aria-labelledby="year-tab">
+                            <div class="tab-pane fade  @if (!empty($yearArray) && empty($monthArray) && empty($weekArray)) show active @endif" id="year" role="tabpanel" aria-labelledby="year-tab">
                                 {{-- Year Tab --}}
                                 <ul class="doctors-listing">
                                     @php $count=0; @endphp
@@ -137,7 +128,7 @@
                                                 </div>
                                             </div>
                                             <div class="time-list">
-                                                <span><img src="{{ asset('assets/images/visits/bell.png') }}" alt="time">{{ $data->created_at ? date('l, M d', strtotime($data->created_at )) : '' }} </span>
+                                                <span><img src="{{ asset('assets/images/visits/bell.png') }}" alt="time">{{ $data->created_at ? date('M d, Y.', strtotime($data->created_at )) : '' }} </span>
                                                 {{-- <a href="javascript:void(0)"><img src="{{asset('assets/images/visits/dots.png')}}" alt="dot"></a> --}}
                                             </div>
                                             <span class="bottom-line"></span>
@@ -149,9 +140,7 @@
                                 </ul>
                             </div>
 
-                            <div class="tab-pane fade  <?php if (!empty($monthArray) && empty($weekArray)) {
-                                echo 'show active';
-                            } ?>" id="month" role="tabpanel" aria-labelledby="month-tab">
+                            <div class="tab-pane fade  @if (!empty($monthArray) && empty($weekArray)) show active @endif" id="month" role="tabpanel" aria-labelledby="month-tab">
                                 {{-- Month Tab --}}
                                 <ul class="doctors-listing">
                                     @php $count=0; @endphp
@@ -184,9 +173,7 @@
                                 </ul>
                             </div>
 
-                            <div class="tab-pane fade  <?php if (!empty($weekArray) && empty($yearArray) && empty($monthArray)) {
-                                echo 'show active';
-                            } ?>" id="week" role="tabpanel" aria-labelledby="week-tab">
+                            <div class="tab-pane fade  @if (!empty($weekArray) && empty($yearArray) && empty($monthArray)) show active @endif" id="week" role="tabpanel" aria-labelledby="week-tab">
                                 {{-- Week Tab --}}
                                 <ul class="doctors-listing">
                                     @php $count=0; @endphp
@@ -282,59 +269,72 @@
                                             <span class="sub">Yes, I work out 3 times a week.</span>
                                         </li> -->
                                     </ul>
-                                    <div class="sub-heading">
+                                    
+                                    <!--
+                                    <div class="sub-heading" id="faceshot_photoid_images_heading" style="display:none;">
                                         Upload Faceshot and PhotoId
                                     </div>
-                                    <ul class="symptoms-listing">
+                                    <ul class="symptoms-listing" id="faceshot_photoid_images_section" style="display:none;">
                                         <li class="symptoms-list image-uploader" id="faceshotImage">
                                             <img src="" id="faceshot_image" style="height:100px;width:100px;" />
+                                            {{--
                                             <form id="image_upload" action="{{ env('APP_URL') }}/upload_visits_image" method="post" enctype="multipart/form-data">
                                                 @csrf
                                                 <input type='file' name="visits_image" accept="image/*" onchange="fileSelected(this);" />
                                                 <input type="hidden" value="" id="case_num" name="case_num" />
                                             </form>
+                                            --}}
                                         </li>
+
+                                        {{--
                                         <li class="symptoms-list image-uploader" id="face_shot_uploader">
                                             <a href="#" class="drop-file">
                                                 <form id="image_upload" action="{{ env('APP_URL') }}/upload_visits_image" method="post" enctype="multipart/form-data">
                                                     @csrf
                                                     <input type='file' name="visits_image" accept="image/*" onchange="fileSelected(this);" />
                                                     <img id="blah" src="{{ asset('assets/images/tests/cloud.png') }}" alt="your image" />
-                                                    <span class="sub">Click here to Upload Faceshot</span>
+                                                    <span class="sub">Click here to<br>Upload Faceshot</span>
                                                     <input type="hidden" value="" id="case_num" name="case_num" />
                                                 </form>
                                                 <div class="text-danger" style="font-size: 14px;width: 165px;">
                                                 {{ $errors->first('visits_image') }}</div>
                                             </a>
-                                           
                                         </li>
+                                        --}}
+
                                         <li class="symptoms-list image-uploader" id="photoIdImage">
                                             <img src="" id="photoId_image_src" style="height:100px;width:100px;" />
+                                            {{--
                                             <form id="photoId_upload" action="{{ env('APP_URL') }}/upload_photo_id_image" method="post" enctype="multipart/form-data">
                                                 @csrf
                                                 <input type='file' name="photoId_image" accept="image/*" onchange="fileSelected1(this);" />
                                                 <input type="hidden" value="" id="case_num1" name="case_num1" />
                                             </form>
+                                            --}}
                                         </li>
+
+                                        {{--
                                         <li class="symptoms-list image-uploader" id="photo_id_uploader">
                                             <a href="#" class="drop-file">
                                                 <form id="photoId_upload" action="{{ env('APP_URL') }}/upload_photo_id_image" method="post" enctype="multipart/form-data">
                                                     @csrf
                                                     <input type='file' name="photoId_image" accept="image/*" onchange="fileSelected1(this);" />
                                                     <img id="blah" src="{{ asset('assets/images/tests/cloud.png') }}" alt="your image" />
-                                                    <span class="sub">Click here to Upload PhotoId</span>
+                                                    <span class="sub">Click here to<br>Upload PhotoId</span>
                                                     <input type="hidden" value="" id="case_num1" name="case_num1" />
                                                 </form>
                                                 <div class="text-danger" style="font-size: 14px;width: 165px;">
                                                 {{ $errors->first('photoId_image') }}</div>
                                             </a>
-                                         
                                         </li>
+                                        --}}
                                     </ul>
-                                    <div class="sub-heading">
-                                        Upload Images
+                                    -->
+
+                                    <div class="sub-heading" id="uploadable_images_heading">
+                                        Area of concern
                                     </div>
-                                    <ul class="symptoms-listing">
+                                    <ul class="symptoms-listing" id="uploadable_images_section">
                                          <li class="symptoms-list image-uploader" id="currentAreaUploadedImage">
                                             <img src="" id="currentAreaUpload_image" style="height:100px;width:100px;" />
                                             <form id="areaOfConcern_upload" action="{{ env('APP_URL') }}/upload_areaOfConcern_image" method="post" enctype="multipart/form-data">
@@ -349,15 +349,16 @@
                                                     @csrf
                                                     <input type='file' name="areaOfConcern_image" accept="image/*" onchange="fileSelected2(this);" />
                                                     <img id="blah" src="{{ asset('assets/images/tests/cloud.png') }}" alt="your image" />
-                                                    <span class="sub">Click here to Upload Image</span>
+                                                    <span class="sub">Click here to<br>Upload Image</span>
                                                     <input type="hidden" value="" id="case_num2" name="case_num2" />
                                                 </form>
                                                 <div class="text-danger" style="font-size: 14px;width: 165px;">
                                                 {{ $errors->first('areaOfConcern_image') }}</div>
                                             </a>
-                                           
                                         </li>
-                                        <!-- <li id="imageContainer" class="symptoms-list image-uploader"> </li>
+                                        
+                                        {{--
+                                        <li id="imageContainer" class="symptoms-list image-uploader"> </li>
                                         <li id="currentAreaUploadedImage" class="symptoms-list image-uploader" style="display:none;"> </li>
                                         <li class="symptoms-list image-uploader">
                                             <form id="areaOfConcern_upload" action="{{ env('APP_URL') }}/upload_areaOfConcern_image" method="post" enctype="multipart/form-data">
@@ -367,7 +368,8 @@
                                                 <span class="sub">Click here to Upload Image</span>
                                                 <input type="hidden" value="" id="case_num2" name="case_num2" />
                                             </form>
-                                        </li> -->
+                                        </li>
+                                        --}}
                                     </ul>
                                     <div class="sub-heading">
                                         Diagnosis
@@ -398,10 +400,10 @@
                                             <span class="main" id="allergies"> </span>
                                             <span class="sub"></span>
                                         </li>
-                                        <!-- <li class="alergies-list hide">
+                                        {{-- <li class="alergies-list hide">
                                                 <span class="main">Allergy 2</span>
                                                 <span class="sub">Lorem ipsum dolor sit amet, consectetur adipiscing eli</span>
-                                        </li> -->
+                                        </li> --}}
                                     </ul>
                                     <div class="sub-heading alergy">
                                         Medications
@@ -649,7 +651,7 @@
             </div>
         </div>
     </section>
-<input type="hidden" id="user_data" value='<?php echo json_encode($userdata) ?>'/>
+<input type="hidden" id="user_data" value='@php echo json_encode($userdata); @endphp'/>
     {{-- including the scripts --}}
     @include('js_scripts.bottom_scripts')
     <script>
@@ -681,7 +683,7 @@
             $(this).addClass('active');
             var doc_info = $(this).attr('doc_info');
             doc_info = JSON.parse(doc_info);
-            console.log(doc_info);
+            // console.log(doc_info);
             // if((doc_info['condition_qas']=='')||(doc_info['condition_qas']==null)||(doc_info['condition_qas'])){
             if(doc_info['medical_information_qas']){
                 var condQas= JSON.parse(doc_info['medical_information_qas']);
@@ -692,7 +694,7 @@
                     var list=$('#condition_qas');
                     list.append('<li class="symptoms-list"><span class="sub sub-parent">Question '+ind+'</span><span class="main">'+condQas.q[ind]+'</span> <span class="sub">'+condQas.a[ind] +'</span></li>');
                 }
-            }else{
+            } else {
                 $('#condition_qas').html('');
             }
             
@@ -707,46 +709,57 @@
             $('#case_num').val(doc_info['case_number']?doc_info['case_number']:'');
             $('#caseNumber').val(doc_info['case_number']?doc_info['case_number']:'');
             if(doc_info['case_status']!='' && doc_info['case_status']!=null){
-
-            if(doc_info['case_status']=='RX Refill'){
-                $('#refillButton').button("disable");
-                $('#refillButton').addClass('newRefillButton'); 
-                $('#refillButton').removeAttr("onclick");
-
-            }
-            else{
-                $('#refillButton').removeClass('newRefillButton'); 
-                $('#refillButton').attr("onclick",'refillButton1()');
-
-                 
-            }
+                if(doc_info['case_status']=='RX Refill'){
+                    $('#refillButton').button("disable");
+                    $('#refillButton').addClass('newRefillButton'); 
+                    $('#refillButton').removeAttr("onclick");
+                } else {
+                    $('#refillButton').removeClass('newRefillButton'); 
+                    $('#refillButton').attr("onclick",'refillButton1()');
+                }
             }
             
             $('#case_num1').val(doc_info['case_number']?doc_info['case_number']:'');
             $('#case_num2').val(doc_info['case_number']?doc_info['case_number']:'');
 
+            /*
+            if ((doc_info['image_2'] != '') && (doc_info['image_2'] != null) || (doc_info['image_1'] != '') && (doc_info['image_1'] != null)) {
+                $('#faceshot_photoid_images_heading').show();
+                $('#faceshot_photoid_images_section').show();
+            } else {
+                $('#faceshot_photoid_images_heading').hide();
+                $('#faceshot_photoid_images_section').hide();
+            }
+            
             if ((doc_info['image_1'] != '') && (doc_info['image_1'] != null)) {
                 document.getElementById('faceshot_image').src = doc_info['image_1'];
                 $('#face_shot_uploader').hide();
             } else {
                 $('#faceshotImage').hide();
             }
+
             if ((doc_info['image_2'] != '') && (doc_info['image_2'] != null)) {
                 document.getElementById('photoId_image_src').src = doc_info['image_2'];
                 $('#photo_id_uploader').hide();
             } else {
                 $('#photoIdImage').hide();
             }
+            */
+
             if ((doc_info['image_3'] != '') && (doc_info['image_3'] != null)) {
                 document.getElementById('currentAreaUpload_image').src = doc_info['image_3'];
                 $('#currentArea_image_upload').hide();
                 $('#currentAreaUploadedImage').show();
             } else {
+                if (doc_info['medical_intake_condition'] != 'SKIN'){
+                    $('#uploadable_images_heading').hide();
+                    $('#uploadable_images_section').hide();
+                }
                 $('#currentAreaUploadedImage').hide();
                 $('#currentArea_image_upload').show();
             }
-          
-            console.log(doc_info['case_number']);
+
+            // console.log(doc_info['case_number']);
             var heightString = ((doc_info['height'] != '') && (doc_info['height'] != '')) ? doc_info['height'] : 0;
             var weightString = ((doc_info['weight'] != '') && (doc_info['weight'] != null)) ? doc_info['weight'] : 0;
 
@@ -770,7 +783,7 @@
             }
 
             //Perform calculation
-            console.log(calculatedBmi);
+            // console.log(calculatedBmi);
             if(doc_info['prescriber_firstname']!='' && doc_info['prescriber_firstname']!=null){
                 $('#doc_name').html(doc_info['prescriber_firstname'] + ' ' + doc_info['prescriber_lastname']);
             }else{
@@ -899,6 +912,7 @@
                 }).submit();
             }
         }
+        
 
         function fileSelected2(input) {
             if (input.files[0].name) {
@@ -936,20 +950,88 @@
                 }).submit();
             }
         }
-        // $("#refillForm").validate({
-        //         rules: {
-        //             medicalChange: {
-        //                 required: true,
-        //             },
-        //         },
-        //         messages: {
 
-        //             medicalChange: {
-        //                 required: "Please fill medical change",
-        //             }
-        //         }
-        // });
+        /*
+        $("#refillForm").validate({
+                rules: {
+                    medicalChange: {
+                        required: true,
+                    },
+                },
+                messages: {
+
+                    medicalChange: {
+                        required: "Please fill medical change",
+                    }
+                }
+        });
+        */
+
         function refillButton1(){
+            $('.loader').show();
+           
+           $("#refillForm").valid();
+               if (!$("#refillForm").valid()) {
+                        $('.loader').hide();
+                       return false;
+                   }
+                   $.ajaxSetup({
+                       headers: {
+                           'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                       }
+                   });
+                   $.ajax({
+                        url: "{{ URL::to('/refill') }}",
+                        type: "POST",
+                        data: $('#refillForm').serialize(),
+                        success: function(response) {
+                            $('.loader').hide();
+                            // $('#RefillPopupModal').hide();
+                            // console.log("response"+response);
+                            if (response == 0) {
+                                $('#uploadImageErrorModal').modal({
+                                show:true
+                                });
+                                // console.log("error");
+                                // $('#refillResponse').html('Something went wrong');
+                                // $('#msg').html('Your card is saved successfully');
+                                // $('#paymentForm :input').attr('value', '');
+                            } else{
+                                var refillResponse = JSON.parse(response);
+                                if(refillResponse.code=="success")
+                                {
+                                     $('#refillResponse').html('Refill updated successfully');
+                                    $('#refillModal').modal({
+                                    show:true
+                                });
+                                $('#case_status').html('RX Refill');
+                                $('#refillButton').button("disable");
+                                $('#refillButton').addClass('newRefillButton'); 
+                                $('#refillButton').removeAttr("onclick");
+
+                                }
+                               
+
+                               // console.log(refillResponse.code);
+                            }
+                        },
+                        error: function(error) {
+                            $('.loader').show();
+                            // $('#RefillPopupModal').hide();
+
+                            var validator = $("#refillForm").validate();
+                            var objErrors = {};
+                            for (const [key, value] of Object.entries(error.responseJSON.errors)) {
+                                objErrors[key] = value[0];
+                            }
+                            validator.showErrors(objErrors);
+                        },
+                    });
+           
+        }
+        
+        /*
+        $('#refillButton').click(function() {
             $('.loader').show();
            
            $("#refillForm").valid();
@@ -971,28 +1053,14 @@
                             // $('#RefillPopupModal').hide();
                             console.log("response"+response);
                             if (response == 0) {
-                                $('#uploadImageErrorModal').modal({
-                                show:true
-                                });
                                 console.log("error");
-                                // $('#refillResponse').html('Something went wrong');
+                                $('#refillResponse').html('Something went wrong');
                                 // $('#msg').html('Your card is saved successfully');
                                 // $('#paymentForm :input').attr('value', '');
                             } else{
                                 var refillResponse = JSON.parse(response);
                                 if(refillResponse.code=="success")
-                                {
-                                     $('#refillResponse').html('Refill updated successfully');
-                                    $('#refillModal').modal({
-                                    show:true
-                                });
-                                $('#case_status').html('RX Refill');
-                                $('#refillButton').button("disable");
-                                $('#refillButton').addClass('newRefillButton'); 
-                                $('#refillButton').removeAttr("onclick");
-
-                                }
-                               
+                                $('#refillResponse').html('Refill updated successfully');
 
                                console.log(refillResponse.code);
                             }
@@ -1009,56 +1077,10 @@
                             validator.showErrors(objErrors);
                         },
                     });
-           
-        }
-        // $('#refillButton').click(function() {
-        //     $('.loader').show();
-           
-        //    $("#refillForm").valid();
-        //        if (!$("#refillForm").valid()) {
-        //                 $('.loader').hide();
-        //                return false;
-        //            }
-        //            $.ajaxSetup({
-        //                headers: {
-        //                    'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-        //                }
-        //            });
-        //            $.ajax({
-        //                 url: "{{ URL::to('/refill') }}",
-        //                 type: "POST",
-        //                 data: $('#refillForm').serialize(),
-        //                 success: function(response) {
-        //                     $('.loader').hide();
-        //                     // $('#RefillPopupModal').hide();
-        //                     console.log("response"+response);
-        //                     if (response == 0) {
-        //                         console.log("error");
-        //                         $('#refillResponse').html('Something went wrong');
-        //                         // $('#msg').html('Your card is saved successfully');
-        //                         // $('#paymentForm :input').attr('value', '');
-        //                     } else{
-        //                         var refillResponse = JSON.parse(response);
-        //                         if(refillResponse.code=="success")
-        //                         $('#refillResponse').html('Refill updated successfully');
+                });
+        */           
 
-        //                        console.log(refillResponse.code);
-        //                     }
-        //                 },
-        //                 error: function(error) {
-        //                     $('.loader').show();
-        //                     // $('#RefillPopupModal').hide();
-
-        //                     var validator = $("#refillForm").validate();
-        //                     var objErrors = {};
-        //                     for (const [key, value] of Object.entries(error.responseJSON.errors)) {
-        //                         objErrors[key] = value[0];
-        //                     }
-        //                     validator.showErrors(objErrors);
-        //                 },
-        //             });
-        //         });
-           
+        
     </script>
 </body>
 </html>
