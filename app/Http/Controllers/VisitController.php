@@ -38,6 +38,29 @@ class VisitController extends Controller
             }
 
             if (!empty($curlresponse) && is_array($curlresponse)) {
+                $tmpArray = [];
+
+                foreach ($curlresponse as $key => $res) {
+                    if ('no data found' != isset($res->message)) {
+                        $tmpArray[$key] = $res;
+
+                        for ($i = 1; $i < 4; ++$i) {
+                            if (!empty($res->{'image_' . $i})) {
+                                $tmp = $res->{'image_' . $i};
+
+                                if (false !== strpos($tmp, 'http')) {
+                                    $tmp = strtr($tmp, ['https://' => '', 'http://' => '']);
+                                    $tmp = explode('/', $tmp);
+                                    array_shift($tmp);
+                                    $tmp = '/' . implode('/', $tmp);
+                                }
+                            }
+                            $tmpArray[$key]->{'image_' . $i} = $tmp;
+                        }
+                    }
+                }
+                $curlresponse = $tmpArray;
+
                 foreach ($curlresponse as $res) {
                     if ('no data found' != isset($res->message)) {
                         $year = date('Y', strtotime($res->created_at));

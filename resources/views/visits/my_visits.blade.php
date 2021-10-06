@@ -179,8 +179,7 @@
                                     @php $count=0; @endphp
                                     @foreach ($weekArray as $data)
                                         @php $count++ @endphp
-                                        <li class="doctors-list consult_{{ $data->case_number }}" casenum="{{ $data->case_number }}"
-                                            doc_info='{{ json_encode($data) }}'>
+                                        <li class="doctors-list consult_{{ $data->case_number }}" casenum="{{ $data->case_number }}" doc_info='{{ json_encode($data) }}'>
                                             <div class="profile-icon">
                                                  @if(empty($data->doc_image))
                                                     <img src="{{asset('assets/images/messages/2.png')}}" alt="profile" style="height: 40px;width: 40px;object-fit: cover;">
