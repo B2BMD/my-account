@@ -1,0 +1,786 @@
+@media(max-width: 1600px){
+  .section-inner .main-content-section.test-page-two .test-listing .test-list .test-list-inner .left img {
+    margin-right: 10px;
+  }
+  .section-inner .main-content-section .main-content-section-inner {
+    margin-left: 22px;
+  }
+}
+@media(max-width: 1366px){
+  .section-inner .main-content-section .main-content-section-inner .main-content-section-inner-scroller .orders-listing .orders-list img{
+    height: 146px !important;
+    width: 146px !important;
+  }
+  .section-inner .main-content-section .main-content-section-inner-test .main-content-section-left li a{
+    min-width: auto;
+  }
+  .section-inner .main-content-section .main-content-section-inner-test .main-content-section-left li{
+    padding: 0;
+  }
+  .section-inner .main-content-section .main-content-section-inner-test .main-content-section-left li a{
+    padding: 20px 14px;
+  }
+  .section-inner .main-content-section .main-content-section-inner {
+    margin-left: 20px;
+  }
+  .section-inner .main-content-section .main-content-section-inner .test-search-text h2 span img {
+    margin-right: 10px;
+  }
+  .section-inner .main-content-section .main-content-section-inner .test-search-text{
+    display: block;
+    padding: 12px 24px 28px;
+  }
+  .section-inner .main-content-section .main-content-section-inner .test-search-text .search-bar{
+    margin: 0;
+  }
+  .section-inner .main-content-section .main-content-section-inner .test-search-text h2{
+    font:20px/40px Roboto_medium,sans-serif;
+  }
+  .section-inner .main-content-section .main-content-section-inner .test-listing .test-list{
+    max-width: 100%;
+    flex: 0 0 100%;
+  }
+  .section-inner .main-content-section .main-content-section-inner .search-bar input{
+    margin-top: 10px;
+    height: 46px;
+    padding: 0 45px;
+  }
+  .section-inner .main-content-section .main-content-section-inner .test-search-text .search-bar img {
+    top: 15px;
+    width: 15px;
+}
+}
+@media(max-width: 1024px){
+  .section-inner .main-content-section .main-content-section-inner .add-new-popup-modal .modal-dialog{
+    max-width: 678px;
+}
+  .section-inner .main-content-section .main-content-section-inner.completed-orders .completed-orders-listing .completed-orders-list .completed-orders-left,
+  .section-inner .main-content-section .main-content-section-inner.completed-orders .completed-orders-listing .completed-orders-list .completed-orders-right {
+    padding: 0 10px 0 25px;
+}
+.section-inner .main-content-section .main-content-section-inner {
+  margin-left: 0;
+}
+.section-inner .main-content-section .main-content-section-inner .main-content-section-inner-scroller{
+  padding: 0;
+}
+.section-inner .main-content-section .main-content-section-inner .main-content-section-inner-scroller h3.mt48{
+  margin-top: 0;
+}
+.section-inner .main-content-section .main-content-section-inner.completed-orders .completed-orders-listing .completed-orders-list .completed-orders-left img, 
+.section-inner .main-content-section .main-content-section-inner.completed-orders .completed-orders-listing .completed-orders-list .completed-orders-right img {
+  height: 106px !important;
+  width: 106px !important;
+}
+  .section-inner .main-content-section .main-content-section-inner.completed-orders {
+    padding: 25px 30px;
+}
+  .section-inner .main-content-section.reschedule-call .main-content-section-upper .main-content-section-upper-bottom .profile-icon .main {
+    font: 18px/28px Roboto_regular,sans-serif;
+  }
+  .common-pages .profile-icon img{
+    width: 80px !important;
+    height: 80px !important;
+  }
+  .section-inner .main-content-section.reschedule-call .main-content-section-upper .main-content-section-upper-bottom .reschedule-right-btn{
+    width: 52%;
+  }
+  .section-inner .main-content-section.reschedule-call .main-content-section-upper .main-content-section-upper-bottom {
+    padding: 54px 20px 46px 20px;
+  }
+  .section-inner .main-content-section.reschedule-call .main-content-section-upper .main-content-section-upper-top .two-sections .left-section li {
+    font: 20px/29px Roboto_regular,sans-serif;
+  }
+  .section-inner .main-content-section.reschedule-call .main-content-section-upper .main-content-section-upper-top .two-sections .right-section .btn:last-child {
+    margin-left: 10px;
+  }
+  .section-inner .main-content-section.reschedule-call .main-content-section-upper .main-content-section-upper-top .two-sections .left-section li img {
+    margin-right: 10px;
+  }
+  .section-inner .main-content-section.reschedule-call .main-content-section-upper .main-content-section-upper-top .two-sections .right-section .btn{
+    flex: 0 0 130px;
+    max-width: 130px;
+  }
+  .section-inner .main-content-section .main-content-section-inner .main-content-section-left .profile-box img.profile_picture{
+    height: 170px;
+    object-fit: cover;
+    width: 160px;
+  }
+  .section-inner .main-content-section .main-content-section-inner .main-content-section-left .profile-box .camera-img {
+    height: 62px;
+    width: 62px;
+  }
+  .section-inner .main-content-section .main-content-section-inner-test .main-content-section-left li a .user{
+    display: block;
+  }
+  .section-inner .main-content-section .main-content-section-inner-test .main-content-section-left li a .user .text{
+    margin-top: 10px;
+  }
+  .main-content-section-inner table.order-table {
+    width: 100%;
+    padding: 10px;
+    white-space: nowrap;
+    overflow: auto;
+    display: block;
+}
+}
+@media(max-width: 767px){
+  .section-inner .main-content-section .main-content-section-inner.completed-orders h2{
+    font-size: 15px;
+  }
+  .main-order-details .order-detail-inner{
+    padding: 30px 15px;
+  }
+  .main-order-details .order-detail-inner .order-deatil-table td img {
+    width: 100px;
+    height: 100px;
+    margin-right: 0px;
+    display: block;
+}
+.main-order-details .order-detail-inner .order-deatil-table th, .main-order-details .order-detail-inner .order-deatil-table td {
+  padding: 5px 0;
+  font-size: 15px;
+  vertical-align: middle;
+}
+.main-order-details .order-status {
+    font-size: 15px;
+ }
+  .main-content-section-inner table.order-table th, 
+  .main-content-section-inner table.order-table td{
+    font-size: 15px;
+  }
+    /* registration */
+    .registration-content .heading{
+      font: 25px/40px Roboto_regular,sans-serif;
+    }
+    .registration-content .navbar .navbar-brand{
+      width: 200px;
+    }
+    .registration-content .navbar .navbar-brand img{
+      width: 100%;
+    }
+    .registration-content{
+      padding: 20px;
+    }
+    .registration-content form{
+      margin-top: 25px;
+    }
+    .form-group.password .eye{
+      top: 15px;
+      right: 15px;
+    }
+    .form-group input{
+      height: 45px;
+      padding: 0 20px;
+    }            
+    .registration-content form .forgot-password{
+      font-size: 13px;
+    }
+    .registration-content form .form-group label.container{
+      font-size: 13px;
+      padding-left: 30px;
+    }
+    .registration-content form .large.btn{
+      height: 45px;
+    }
+    .registration-content form .checkbox-box{
+      padding: 0;
+      margin: 24px 0 24px;
+    }
+
+    /* header */
+    .common-pages header .navbar .navbar-brand{
+        margin-right: 10px;
+        width: 90px;
+        margin-bottom: 10px;
+    }
+    .common-pages header .navbar .navbar-brand img{
+        width: 100%
+    }
+    .common-pages header .navbar .search-bar{
+        position: absolute;
+        top: 60px;
+        max-width: calc(100% - 100px);
+        right: 20px;
+    }
+
+    /* inner-section */
+    .section-inner{
+        margin-top: 40px;
+    }
+    .section-inner .main-content-section{
+        width: 100%;
+        max-width: 100%;
+        padding: 0 15px;
+    }
+    .section-inner .main-content-section h2{
+        font-size: 18px;
+        margin-bottom: 5px;
+    }
+    .section-inner .main-content-section .main-content-section-inner .main-content-section-left .doctors-listing{
+        padding: 0 0 20px 0;
+        list-style: none;
+        height: auto;
+    }
+
+    /* sidebar */
+    .common-pages.menu-show{
+        overflow: hidden;
+    }
+    #sidebar .sidebar-listing li{
+      margin-bottom: 25px !important;
+    }
+    .menu-icon{
+        /* width: 30px;
+        height: 30px; */
+        position: absolute;
+        left: 22px;
+        top: 65px;
+    }
+    .menu-icon img.menu-icon-img{
+        display: block;
+        width: 30px;
+        height: 30px;
+    }
+    .sidebr-overlay.show{
+      display: block;
+      pointer-events: none;
+      position: fixed;
+      height: 100%;
+      width: 100%;
+      top: 0;
+      left: 0;
+    }
+    #sidebar .sidebar-listing li a span{
+      display: block;
+    }
+    #sidebar .sidebar-listing.bottom-listing{
+      position: initial;
+    }
+    .menu-icon #sidebar.show{
+      display: block;
+      background: #FFF;
+      width: 320px;
+      max-width: 100%;
+      position: fixed;
+      z-index: 999;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 0 7px 0 rgba(0, 0, 0, 0.38);
+      min-height: auto;
+      height: auto;
+      margin-top: 12px;
+    }
+    .section-inner .main-content-section .main-content-section-inner{
+        display: block;
+        background-color: transparent;
+    }
+    .section-inner .main-content-section .main-content-section-inner .main-content-section-left{
+        max-width: 100%;
+    }
+    .section-inner .main-content-section .main-content-section-inner .main-content-section-right{
+        max-width: 100%;
+        padding-left: 0 !important;
+        background: #fff;
+    }
+    .section-inner .main-content-section.visits-main-page{
+        max-width: 100%;
+    }
+    .section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTab .nav-item .nav-link{
+        padding: 5px;
+        font-size: 10px;
+    }
+    .section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent .symptoms-listing{
+        display: -webkit-box;
+        overflow-x: auto;
+    }
+    .section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent .symptoms-listing .symptoms-list{
+        padding: 5px 10px;
+        width: 118px;
+    }
+    .section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent .vitals-listing .sub{
+        font: 20px/28px Roboto_regular,sans-serif;
+    }
+    .section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent #prescription .prescription-detail .prescription-detail-list h4{
+        font-size: 15px;
+    }
+    .section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent #provider .provider-header img{
+        margin-right: 10px;
+    }
+    .section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent #prescription .prescription-detail .prescription-detail-list:last-child{
+      height: auto;
+      margin-top: 20px;
+    }
+    .section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent #prescription .prescription-detail .prescription-detail-list .prescription-detail-list-inner .two-sections{
+      display: block;
+    }
+    .section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent #prescription .prescription-detail .prescription-detail-list .prescription-detail-list-inner .two-sections .left{
+      margin-right: 0;
+      position: relative;
+      margin-left: 10px;
+    }
+    .section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent #prescription .prescription-detail .prescription-detail-list .two-sections .sub{
+      height: auto;
+      margin: 5px 0 10px;
+    }
+    .section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent #prescription .prescription-detail .prescription-detail-list .prescription-detail-list-inner .two-sections .left:before{
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 0;
+      border-left: 5px solid #2D7D00;
+      border-bottom: 5px solid transparent;
+      border-top: 5px solid transparent;
+      top: 4px;
+      left: -10px;
+      z-index: 9999999;
+    }
+    .section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent #provider .form-group{
+      padding: 10px 15px;
+    }
+    .section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent #provider .form-group label{
+      font-size: 13px;
+      margin: 0 12px 0;
+    }
+    .section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent{
+      height: auto;
+    }
+    .section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent #provider .form-group textarea, .section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent #provider .form-group input{
+      font-size: 13px;
+    }
+    .section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent #provider h2{
+      font-size: 15px;
+    }
+    .section-inner .main-content-section .main-content-section-inner .test-listing .test-list{
+      max-width: 100%;
+      flex: 0 0 100%;
+      padding: 0;
+    }
+    .section-inner .main-content-section .main-content-section-inner .test-listing{
+      display: block;
+      padding: 0 10px;
+    }
+    .section-inner .main-content-section .main-content-section-inner .search-bar img{
+      top: 15px;
+      left: 40px;
+      width: 15px;
+      height: 15px;
+    }
+    .section-inner .main-content-section .main-content-section-inner .search-bar{
+      padding: 0 20px 28px;
+      margin: 0;
+    }
+    .common-pages header .navbar{
+      align-items: center;
+    }
+    .section-inner .main-content-section .main-content-section-inner .search-bar input{
+      height: 45px;
+      padding: 0 10px 0 45px !important;
+      font-size: 18px;
+    }
+    .section-inner .main-content-section.test-page-two .test-listing .test-list .test-list-inner .left span{
+      font-size: 15px !important
+    }
+    .section-inner .main-content-section h2 .test-btns .btn:first-child{
+      margin-right: 0;
+      padding: 0 15px;
+    }
+    .section-inner .main-content-section.test-page-two .test-listing .test-list .test-list-inner .left .main{
+      line-height: 20px;
+    }
+    .section-inner .main-content-section .main-content-section-inner .test-search-text{
+      display: block;
+      padding: 0 24px 28px;
+    }
+    .section-inner .main-content-section.test-page-two .test-listing .test-list .test-list-inner .left img {
+      margin-right: 12px;
+    }
+    .section-inner .main-content-section .main-content-section-inner .test-search-text .search-bar{
+      margin: 0;
+    }
+    .section-inner .main-content-section .main-content-section-inner .scroller-list .test-listing .test-list .test-list-inner{
+      padding: 12px 10px !important;
+      display: flex;
+    }
+    /* schedule-page */
+    .section-inner .main-content-section.reschedule-call .reschedule-call-inner{
+      display: block;
+    }
+    .section-inner .main-content-section.reschedule-call .reschedule-call-inner h4{
+      margin-bottom: 10px;
+      font-size: 15px;
+    }
+    .section-inner .main-content-section.reschedule-call .reschedule-call-inner .reschedule-btn{
+      font-size: 18px;
+    }
+    .section-inner .main-content-section.schedule-call .main-content-section-inner{
+      padding: 0px 0px 70px;
+    }
+    .section-inner .main-content-section.schedule-call{
+      max-width: 100%;
+    }
+    .section-inner .main-content-section.reschedule-call .main-content-section-upper .main-content-section-upper-top .two-sections{
+      display: block;
+    }
+    .section-inner .main-content-section.reschedule-call .main-content-section-upper .main-content-section-upper-top .two-sections .left-section li{
+      font: 16px/27px Roboto_regular,sans-serif;
+    }
+    .section-inner .main-content-section.reschedule-call .main-content-section-upper .main-content-section-upper-top h3{
+      font: 20px/20px Roboto_medium,sans-serif
+    }
+    .section-inner .main-content-section.reschedule-call .main-content-section-upper .main-content-section-upper-top .two-sections .right-section{
+      max-width: 100%;
+      flex: 0 0 100%;
+      justify-content: space-around;
+    }
+    .section-inner .main-content-section.reschedule-call .main-content-section-upper .main-content-section-upper-top .two-sections .right-section .btn{
+      font: 15px/24px Roboto_regular,sans-serif;
+      max-width: 100px;
+      flex: 0 0 100px;
+      border-radius: 20px;
+      height: 38px;
+      margin-bottom: 20px;
+    }
+    .section-inner .main-content-section.reschedule-call .main-content-section-upper .main-content-section-upper-bottom{
+      padding: 30px 10px 30px 10px;
+      display: block;
+    }
+    .section-inner .main-content-section.reschedule-call .main-content-section-upper{
+      margin-bottom: 20px;
+    }
+    .section-inner .main-content-section.reschedule-call .main-content-section-upper .main-content-section-upper-bottom .profile-icon .sub{
+      font-size: 14px;
+    }
+    .section-inner .main-content-section.schedule-call .main-content-section-inner{
+      padding: 0;
+    }
+    .section-inner .main-content-section.reschedule-call .main-content-section-upper .main-content-section-upper-bottom .reschedule-right-btn .btn{
+      max-width: 165px;
+    }
+    .common-pages .profile-icon img{
+      width: 40px !important;
+      height: 40px !important;
+      margin-right: 10px;
+    }
+    .section-inner .main-content-section.reschedule-call .main-content-section-upper .main-content-section-upper-bottom .profile-icon .main{
+      font-size: 17px;
+    }
+    .section-inner .main-content-section.reschedule-call .main-content-section-upper .main-content-section-upper-bottom .reschedule-right-btn{
+      width: 100%;
+      margin-top: 10px;
+      justify-content: space-around;
+    }
+    /* orders*/
+    .section-inner .main-content-section.test-page{
+      max-width: 100%;
+    }
+    .section-inner .main-content-section.test-page h2 .test-btns{
+      max-width: 100%;
+      margin-top: 0;
+      display: block;
+    }
+    .section-inner .main-content-section.test-page h2 .test-btns .btn{
+      max-width: 100%;
+      margin-bottom: 20px;
+    }
+    .section-inner .main-content-section.test-page h2 .test-btns .search-bar{
+      max-width: 100%;
+    }
+    .section-inner .main-content-section.test-page .main-content-section-inner{
+      padding:  20px;
+      height: auto;
+      margin: 20px 0 0;
+      background: #fff;
+    }
+    .section-inner .main-content-section.test-page .main-content-section-inner .main-content-section-inner-scroller{
+      height: auto;
+      padding: 0;
+    }
+    .section-inner .main-content-section .main-content-section-inner .main-content-section-inner-scroller .orders-listing .orders-list{
+      max-width: 100%;
+      display: block;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .section-inner .main-content-section .main-content-section-inner .main-content-section-inner-scroller .orders-listing .orders-list .sub{
+      font-size: 15px;
+      line-height: 15px;
+    }
+    .section-inner .main-content-section .main-content-section-inner .main-content-section-inner-scroller h3{
+      font: 17px/28px Roboto_medium,sans-serif;
+    }
+    .section-inner .main-content-section.profile-page h2{
+      margin-bottom: 10px;
+    }
+    .section-inner .main-content-section .main-content-section-inner .main-content-section-left .profile-box{
+      margin-bottom: 20px;
+    }
+    .section-inner .main-content-section .main-content-section-inner .main-content-section-left .profile-box .camera-img{
+      height: 52px;
+      width: 52px;
+    }
+    .section-inner .main-content-section .main-content-section-inner .main-content-section-left .profile-box img{
+      height: auto;
+    }
+    .section-inner .main-content-section .main-content-section-inner .main-content-section-left .profile-box .camera-img img{
+      width: 30px !important
+    }
+    .section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner h2{
+      padding: 20px 21px 0;
+    }
+    .section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner h2.mt52{
+      margin-top: 10px;
+    }
+    .section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner .form-group textarea, .section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner .form-group input{
+      font-size: 13px;
+    }
+    .section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner .form-group label{
+      font-size: 13px;
+      max-width: 90px;
+    }
+    .section-inner .main-content-section.profile-page .main-content-section-inner  .form-group.password .eye{
+      right: 60px !important
+    }
+    .section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner .form-group .visa-img{
+      margin: 0 10px 0 0px;
+      width: 40px;
+    }
+    .section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner h2{
+      font-size: 17px;
+    }
+    .mint-popup .modal-dialog .modal-content{
+      padding: 40px 20px;
+      width: 300px;
+    }
+    /* faq */
+    .section-inner .main-content-section .main-content-section-inner.faq .content-area{
+      margin-bottom: 26px;
+      padding: 0;
+    }
+    .section-inner .main-content-section .main-content-section-inner.faq h5{
+      margin-bottom: 12px;
+    }
+    /* contact-us */
+    .section-inner .main-content-section.contact-us{
+      max-width: 100%;
+    }
+    .section-inner .main-content-section.contact-us .main-content-section-inner{
+      padding: 0 10px;
+    }
+    .section-inner .main-content-section.contact-us .two-sections .right-section{
+      max-width: 100%;
+    }
+    .section-inner .main-content-section.contact-us .two-sections{
+      margin: 0 0 20px;
+      display: block;
+    }
+    .section-inner .main-content-section.contact-us .two-sections .left-section{
+      padding: 0;
+      max-width: 100%;
+    }
+    .section-inner .main-content-section.contact-us .two-sections .right-section{
+      padding: 0;
+    }
+    /* message */
+    .section-inner .main-content-section.message-page{
+      max-width: 100%;
+    }
+    .section-inner .main-content-section.message-page .main-content-section-inner .left-side-users{
+      max-width: 100%;
+    }
+    .section-inner .main-content-section.message-page .main-content-section-inner .right-side-chatbox{
+      max-width: 100%;
+      margin: 20px 0;
+    }
+    .mint-popup .modal-dialog .modal-content .form-group{
+      padding: 10px 20px;
+    }
+    .mint-popup .modal-dialog .modal-content .provider-header img {
+      margin-right: 14px;
+  }
+    .mint-popup.providerDetailsModal .modal-dialog .modal-content{
+      width: 300px;
+    }
+    .mint-popup .modal-dialog .modal-content .form-group label{
+      margin: 0 8px 0 0;
+    }
+    
+    .mint-popup .modal-dialog .modal-content h2 {
+      font: 16px/24px Roboto_medium,sans-serif;
+    }
+    .mint-popup .modal-dialog .modal-content .form-group label {
+      font: 15px/22px Roboto_regular,sans-serif;
+    }
+    .mint-popup .modal-dialog .modal-content .form-group textarea, .mint-popup .modal-dialog .modal-content .form-group input {
+      font: 15px/22px Roboto_regular,sans-serif;
+    }
+    .section-inner .main-content-section.message-page .main-content-section-inner .left-side-users .contact-list li a{
+      min-width: auto;
+    }
+    #sidebar{
+        display: none
+    }
+    .section-inner .main-content-section .main-content-section-inner.completed-orders .completed-orders-listing .completed-orders-list{
+      margin: 0 0 30px;
+    }
+    .section-inner .main-content-section .main-content-section-inner.completed-orders .completed-orders-listing .completed-orders-list .completed-orders-left{
+      padding: 0 10px 0 0;
+    }
+    .section-inner .main-content-section .main-content-section-inner.completed-orders .completed-orders-listing .completed-orders-list .completed-orders-right{
+      padding: 0 0 0 5px;
+    }
+    .section-inner .main-content-section .main-content-section-inner.completed-orders .completed-orders-listing .completed-orders-list .completed-orders-left img, .section-inner .main-content-section .main-content-section-inner.completed-orders .completed-orders-listing .completed-orders-list .completed-orders-right img{
+      width: 70px !important;
+      height: 70px !important
+    }
+    .section-inner .main-content-section .main-content-section-inner.completed-orders .completed-orders-listing .completed-orders-list .completed-orders-left .buttons, .section-inner .main-content-section .main-content-section-inner.completed-orders .completed-orders-listing .completed-orders-list .completed-orders-right .buttons{
+      display: block;
+    }
+    .section-inner .main-content-section .main-content-section-inner.completed-orders .completed-orders-listing .completed-orders-list .completed-orders-left .buttons .btn.green, .section-inner .main-content-section .main-content-section-inner.completed-orders .completed-orders-listing .completed-orders-list .completed-orders-right .buttons .btn.green{
+      width: 100%;
+      padding: 0 10px;
+      max-width: -webkit-fit-content;
+      max-width: -moz-fit-content;
+      max-width: 100%;
+      margin: 10px 0;
+    }
+    .section-inner .main-content-section .main-content-section-inner.completed-orders .completed-orders-listing .completed-orders-list .completed-orders-left .buttons .btn.blue, .section-inner .main-content-section .main-content-section-inner.completed-orders .completed-orders-listing .completed-orders-list .completed-orders-right .buttons .btn.blue{
+      padding: 0 8px;
+      height: 42px;
+      margin: 10px 0;
+    }
+    .doctor-page-inner{
+      padding:20px
+    }
+    .doctor-page-inner p {
+      font: 15px/22px Roboto_regular,sans-serif;
+      max-width: 100px;
+    }
+    .doctor-page-inner span{
+      font-size: 15px;
+    }
+    .section-inner .main-content-section.schedule-call textarea{
+      margin-bottom: 0;
+    }
+    .section-inner .main-content-section.schedule-call .drops .dropdown{
+      margin-right: 0;
+      margin: 10px 0 !important;
+    }
+    .section-inner .main-content-section.schedule-call .drops{
+      display: block;
+    }
+    .section-inner .main-content-section.schedule-call .submit-box .btn.submit-btn a{
+      color: #fff;
+    }
+    .section-inner .main-content-section.schedule-call .submit-box{
+      margin-bottom: 20px;
+    }
+    .section-inner .common-modal .modal-dialog .modal-content{
+      width: 100%;
+      height: auto;
+      padding: 40px 20px;
+      border-radius: 13px;
+      margin: 0 20px;
+    }
+    .section-inner .main-content-section.message-page .main-content-section-inner .right-side-chatbox .messages-box .message-inner .send-box{
+      padding: 0;
+    }
+    .section-inner .main-content-section.message-page .main-content-section-inner .right-side-chatbox .messages-box .message-inner .message-inne-inner{
+      padding-bottom: 104px;
+      margin-bottom: 0;
+    }
+    .section-inner .main-content-section.message-page .main-content-section-inner .right-side-chatbox .messages-box .message-inner .send-box .inner .send-input{
+      border-radius: 0;
+    }
+    .section-inner .main-content-section .main-content-section-inner.order-detail .main-content-section-upper .main-content-section-left-inner{
+      padding: 43px 20px 20px;
+    }
+    .section-inner .main-content-section.test-page .main-content-section-inner h2{
+      display: flex;
+    }
+    .section-inner .main-content-section.test-page .main-content-section-inner h2 span img{
+      margin-right: 10px;
+    }
+    .section-inner .main-content-section.test-page .main-content-section-inner .two-sections .left-section,
+     .section-inner .main-content-section.test-page .main-content-section-inner .two-sections .right-section{
+       margin-bottom: 20px;
+     }
+     .section-inner .main-content-section.test-page .main-content-section-inner .two-sections .right-section .buttons .btn.blue{
+       margin-right: 10px;
+       font-size: 12px;
+     }
+     .section-inner .main-content-section.test-page  .main-content-section-inner .two-sections .right-section .buttons .btn.white{
+       font-size: 12px;
+     }
+     .section-inner .main-content-section.test-page  .main-content-section-inner .two-sections .right-section .buttons{
+       padding: 0;
+     }
+     .section-inner .main-content-section.test-page .main-content-section-inner .two-sections{
+       display: block;
+     }
+     .section-inner .main-content-section .main-content-section-inner.order-detail .track{
+      padding: 32px 14px;
+     }
+     .section-inner .main-content-section .main-content-section-inner.order-detail .track .destiny .line #progressbar li.active:after{
+      top: calc(50% - 10px);
+     }
+     .section-inner .main-content-section .main-content-section-inner.order-detail .track .destiny .line #progressbar .bar-content h4 {
+      font-size: 11px;
+      line-height: 10px;
+    }
+    .section-inner .main-content-section .main-content-section-inner.order-detail .track .destiny .line #progressbar .bar-content p {
+      font: 10px/8px Roboto_regular,sans-serif;
+      line-height: 15px;
+    }
+    .section-inner .main-content-section .main-content-section-inner-test{
+      display: block;
+    }
+    .section-inner .main-content-section .main-content-section-inner-test .main-content-section-left{
+      max-width: 100%;
+    }
+    .section-inner .main-content-section .main-content-section-inner-test .main-content-section-right{
+      max-width: 100%;
+    }
+    .section-inner .main-content-section .main-content-section-inner-test .main-content-section-left li a{
+      min-width: auto;
+    }
+    .section-inner .main-content-section .main-content-section-inner .main-content-section-inner-scroller .orders-listing #initialOrders{
+      display: block;
+    }
+    .section-inner .main-content-section .main-content-section-inner .add-new-popup-modal .modal-dialog {
+      max-width: 350px;
+    }
+    .section-inner .main-content-section .main-content-section-inner .add-new-popup-modal .modal-dialog .modal-content{
+      padding: 15px;
+    }
+    .section-inner .main-content-section .main-content-section-inner .add-new-popup-modal .modal-dialog .modal-content h2.card-heading{
+      padding: 0 !important;
+      font: 25px/38px Roboto_bold,sans-serif !important;
+    }
+    .section-inner .main-content-section .main-content-section-inner .add-new-popup-modal .modal-dialog .modal-content .modal-body h2{
+      padding: 10px 0 0 ;
+    }
+    .section-inner .main-content-section .main-content-section-inner .add-new-popup-modal .modal-dialog .modal-content .modal-body h2 {
+      font: 16px/12px Roboto_medium,sans-serif;
+      margin: 5px 0 12px;
+    }
+    .section-inner .main-content-section .main-content-section-inner .add-new-popup-modal .modal-dialog .modal-content .modal-body .save-btn{
+      padding: 6px 60px;
+      width: 140px;
+    }
+    .section-inner .main-content-section .main-content-section-inner .add-new-popup-modal .modal-dialog .modal-content .modal-body .form-group {
+      padding: 18px 5px;
+  }
+  }  
+  @media(max-width: 370px){
+    .common-pages header .navbar .navbar-brand {
+      width: 75px;
+    }
+    .common-pages header .navbar .bell-icon{
+      margin: 0 12px 0 2px !important;
+    }
+    .common-pages .profile-icon img{
+      width: 35px;
+      height: 35px
+    }
+  }  

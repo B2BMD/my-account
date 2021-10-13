@@ -1,0 +1,92 @@
+
+/******************************* DEafult COLORS SYSTEM According to Guidelines *****************************/
+/*FROM BACK END*/
+// $Primarycolor: #006eff; //rgb(0,110,255)
+
+
+
+/* NEUTRAL Colors: */
+$gray-0-ffffff: #FFFFFF; //rgb(255,255,255)
+$gray-50-fcfcfc: #FCFCFC; //rgb(252,252,252)
+$gray-100-f3f3f3: #F3F3F3; //rgb(243,243,243)
+$gray-200-eaeaea: #EAEAEA; //rgb(234,234,234)
+$gray-300-dbdbdb: #DBDBDB; //rgb(219,219,219)
+$gray-400-d1d1d1: #D1D1D1; //rgb(209,209,209)
+$gray-500-b3b3b3: #B3B3B3; //rgb(179,179,179)
+$gray-600-959595: #959595; //rgb(149,149,149)
+$gray-700-6d6d6d: #6D6D6D; //rgb(109,109,109)
+$gray-800-080808: #080808;  //rgb(8,8,8)
+$gray-E6EAF0 : #E6EAF0;
+$gray-A6B1C2 :#A6B1C2;
+$gray-646D82 : #646D82;
+
+$add-files-text-color: #2680BC;
+
+/*ACTION COLOR*/
+$prioticket-blue-informative: #006EFF; //rgb(0,110,255)
+$prioticket-green-positive: #20CC20; //rgb(32,204,32)
+$notice: #FB8F14; //rgb(251,143,20)
+
+$achivement: #FFD938; //rgb(255,217,56)
+$negative: #E84020; //rgb(232,64,32)
+
+
+$borderColor: $gray-200-eaeaea;
+$defaulttext-size: 16px;
+$buttonDisabled: $gray-200-eaeaea !default;
+
+/******************************* //Dynamic Backend COLORS SYSTEM *****************************/
+// from backend color system
+$Primarycolor: var(--Primarycolor);
+
+$Secondarycolor: var(--Secondarycolor); 
+
+$Headingcolor: var(--Headingcolor);
+$Bodytextcolor: var(--Bodytextcolor);
+
+// Button color
+$Button_bg: var(--Button_bg);
+$Button_textcolor: var(--Button_textcolor);
+$Button_hovercolor: var(--Button_hovercolor);
+// Button color
+
+// Header color
+$Header_bg: var(--Header_bg);
+$Header_navigation_textcolor: var(--Header_Navigation_textcolor);
+$Header_element_color: var(--Header_element_color);
+// Header color
+
+// Footer color
+$Footer_bg: var(--Footer_bg);
+$Footer_navigation_textcolor: var(--Footer_Navigation_textcolor);
+$Footer_element_color: var(--Footer_element_color);
+// Footer color
+
+// Page color
+$Page_bg: var(--Page_bg);
+
+// Corner radius
+$Button_corner_radius: var(--Button_Corner_radius); // medium,rounded,sqaure
+$Tiles_corner_radius: var(--Tiles_Corner_radius); // medium,rounded,sqaure
+$Corner_radius: var(--Corner_radius); // medium,rounded,sqaure
+// $Corner_radius: 5px;
+
+// Alignment
+$Alignment: var(--Alignment);
+
+//  FONTS Families
+$Roboto_bold: Roboto_bold, sans-serif;
+$Roboto_regular: Roboto_regular, sans-serif;
+$Roboto_medium: Roboto_medium, sans-serif;
+// $Light_text: Proxima_Nova_Light, sans-serif;
+// $Bodytextcolor: $gray-800-080808;
+
+
+//header
+$dropdown-bg-color: #232225;
+$dropdown-hover-color: #333333;
+
+//footer
+$footer-bg-color: #232225;
+
+

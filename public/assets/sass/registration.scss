@@ -1,0 +1,58 @@
+@import "./style-components/common";
+
+
+.registration-content{
+   max-width: 448px;
+   margin: 0 auto;
+   text-align: center;
+   padding-top: 63px;
+   &.create{
+       form{
+           .checkbox-box{
+               padding: 0 22px;
+           }
+       }
+   }
+   &.login{
+       padding-top: 98px;
+       .heading{
+           margin-left: -8px;
+       }
+   }
+   .heading{
+       color: #000000;
+       font: 49px/59px $Roboto_regular;
+       margin-bottom: 26px;
+       white-space: nowrap;
+   }
+   p{
+       font: 16px/25px $Roboto_regular;
+       color: #7D7D7D;
+       margin: 0;
+   }
+   form{
+       margin-top: 74px;
+       .checkbox-box{
+           display: flex;
+           justify-content: space-between;
+           padding: 0 54px;
+           margin: 53px 0 24px;
+           .form-group{
+               margin: 0;
+           }
+       }
+       .forgot-password{
+           font: 16px/19px $Roboto_regular;
+           color: #808080;
+       }
+       .bottom-text{
+           display: block;
+           font: 16px/19px $Roboto_regular;
+           color: #000000;
+           margin-top: 21px;
+           a{
+               color: $Primarycolor;
+           }
+       }
+   }
+}

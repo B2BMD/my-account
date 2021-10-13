@@ -1,0 +1,1535 @@
+.section-inner .main-content-section.visits-main-page .main-content-section-inner .main-content-section-right .main-content-section-bottom .disease_new {
+    display: flex;
+    align-items: center;
+}
+
+.section-inner .main-content-section.visits-main-page .main-content-section-inner .main-content-section-right .main-content-section-bottom table {
+    overflow-x: auto;
+    white-space: nowrap;
+    display: block
+}
+
+.section-inner .main-content-section.visits-main-page .main-content-section-inner .main-content-section-right .main-content-section-bottom table td,.section-inner .main-content-section.visits-main-page .main-content-section-inner .main-content-section-right .main-content-section-bottom table th {
+    padding: 10px !important;
+}
+
+.section-inner .main-content-section.visits-main-page .main-content-section-inner .main-content-section-right .main-content-section-bottom table::-webkit-scrollbar {
+    height: 5px;
+    border-radius: 2px
+}
+
+.section-inner .main-content-section.visits-main-page .main-content-section-inner .main-content-section-right .main-content-section-bottom table::-webkit-scrollbar-track {
+    background: #fafafa
+}
+
+.section-inner .main-content-section.visits-main-page .main-content-section-inner .main-content-section-right .main-content-section-bottom table::-webkit-scrollbar-thumb {
+    background: #bcbcbc
+}
+
+.form-group {
+    position: relative
+}
+
+.form-group input {
+    height: 56px;
+    border-radius: 40px;
+    background-color: transparent;
+    margin-bottom: 14px;
+    border: 1px solid var(--Primarycolor);
+    padding: 0 40px;
+    font: 16px/56px Roboto_regular,sans-serif;
+    color: var(--Primarycolor)
+}
+
+.form-group input::-webkit-input-placeholder {
+    color: var(--Primarycolor)
+}
+
+.form-group input:-ms-input-placeholder {
+    color: var(--Primarycolor)
+}
+
+.form-group input::-ms-input-placeholder {
+    color: var(--Primarycolor)
+}
+
+.form-group input::placeholder {
+    color: var(--Primarycolor)
+}
+
+.form-group input:focus {
+    outline: none !important;
+    background-color: transparent !important;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: 1px solid var(--Primarycolor)
+}
+
+.form-group.password .eye {
+    position: absolute;
+    right: 36px;
+    top: 21px;
+    cursor: pointer
+}
+
+input.search {
+    height: 40px;
+    padding: 0 55px;
+    border-radius: 8px;
+    border: none;
+    font: 14px/20px Roboto_regular,sans-serif;
+    color: #8DC80E
+}
+
+input.search::-webkit-input-placeholder {
+    color: #8DC80E;
+    opacity: 0.5
+}
+
+input.search:-ms-input-placeholder {
+    color: #8DC80E;
+    opacity: 0.5
+}
+
+input.search::-ms-input-placeholder {
+    color: #8DC80E;
+    opacity: 0.5
+}
+
+input.search::placeholder {
+    color: #8DC80E;
+    opacity: 0.5
+}
+
+.btn {
+    background-color: var(--Primarycolor);
+    border-radius: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+    border-color: var(--Primarycolor)
+}
+
+.btn.white {
+    max-width: 172px;
+    background-color: #fff;
+    color: var(--Primarycolor);
+    border-color: #fff;
+    font: 14px/20px Roboto_regular,sans-serif;
+    -webkit-box-shadow: 0px 3px 3px #00000029;
+    box-shadow: 0px 3px 3px #00000029;
+    height: 42px
+}
+
+.btn.white:hover {
+    background-color: #fff
+}
+
+.btn.green {
+    max-width: 188px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 188px;
+    flex: 0 0 188px;
+    background-color: #8DC80E;
+    color: #fff;
+    border-color: #8DC80E;
+    font: 14px/20px Roboto_regular,sans-serif;
+    -webkit-box-shadow: 0px 3px 3px #00000029;
+    box-shadow: 0px 3px 3px #00000029;
+    height: 42px;
+    border-radius: 20px
+}
+
+.btn.green:hover {
+    background-color: #8DC80E
+}
+
+.btn.large {
+    height: 56px
+}
+
+.btn:hover {
+    background-color: var(--Primarycolor)
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font: 16px/19px Roboto_regular,sans-serif;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    margin: 0
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #D8D8D8
+}
+
+.container input:checked ~ .checkmark {
+    background-color: var(--Primarycolor);
+    border-color: var(--Primarycolor)
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none
+}
+
+.container input:checked ~ .checkmark:after {
+    display: block
+}
+
+.container .checkmark:after {
+    left: 7px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+
+header .navbar {
+    padding: 0 40px 32px
+}
+
+header .navbar .search-bar {
+    position: relative;
+    max-width: calc(100% - 452px);
+    width: 100%
+}
+
+header .navbar .search-bar img {
+    position: absolute;
+    left: 20px;
+    top: 10px
+}
+
+@media (max-width: 1366px) {
+    .common-pages header .navbar {
+        padding:0 60px 44px 40px !important
+    }
+}
+
+@media (max-width: 991px) {
+    .common-pages header .navbar {
+        padding:0 30px 20px 20px !important
+    }
+
+    .common-pages header .navbar .search-bar {
+        max-width: calc(100% - 422px)
+    }
+
+    .common-pages header .navbar .search-bar img {
+        left: 10px
+    }
+
+    .common-pages header .navbar .bell-icon {
+        margin: 0 32px 0 22px !important
+    }
+
+    input.search {
+        padding: 0 5px 0 35px;
+        font-size: 13px
+    }
+}
+
+body {
+    background-color: var(--Secondarycolor);
+    margin: 0;
+    max-width: 1920px;
+    margin: 0 auto
+}
+
+body .common-pages header .navbar {
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end
+}
+
+.common-pages {
+    overflow-x: hidden
+}
+
+.common-pages header .navbar {
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    padding: 0 102px 44px 40px
+}
+
+.common-pages header .navbar .navbar-brand {
+    margin-right: 33px
+}
+
+.common-pages header .navbar .form-inline {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.common-pages header .navbar .bell-icon {
+    margin: 0 32px 0 52px;
+    cursor: pointer
+}
+
+.common-pages .profile-icon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center
+}
+
+.common-pages .profile-icon img {
+    margin-right: 20px
+}
+
+.common-pages .profile-icon .main {
+    font: 16px/17px Roboto_medium,sans-serif;
+    margin-bottom: 0
+}
+
+.common-pages .profile-icon .sub {
+    font: 10px/20px Roboto_regular,sans-serif;
+    display: block
+}
+
+.section-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.section-inner .main-content-section {
+    padding: 0 41px 0 15px;
+    max-width: calc(100% - 205px);
+    width: 100%
+}
+
+.section-inner .main-content-section.visits-main-page .main-content-section-inner {
+    background-color: transparent
+}
+
+.section-inner .main-content-section.visits-main-page .main-content-section-inner .main-content-section-right {
+    padding-left: 52px
+}
+
+.section-inner .main-content-section.visits-main-page .main-content-section-inner .main-content-section-right .main-content-section-upper {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    -webkit-box-shadow: 0px 0px 10px #0000000D;
+    box-shadow: 0px 0px 10px #0000000D;
+    border-radius: 20px;
+    margin-bottom: 32px
+}
+
+.section-inner .main-content-section.visits-main-page .main-content-section-inner .main-content-section-right .main-content-section-upper .main-content-section-upper-top {
+    background-color: var(--Primarycolor);
+    padding: 20px 30px 0;
+    border-radius: 20px 20px 0 0
+}
+
+.section-inner .main-content-section.visits-main-page .main-content-section-inner .main-content-section-right .main-content-section-upper .main-content-section-upper-top h3 {
+    font: 24px/29px Roboto_medium,sans-serif;
+    color: #fff;
+    margin-bottom: 20px
+}
+
+.section-inner .main-content-section.visits-main-page .main-content-section-inner .main-content-section-right .main-content-section-upper .main-content-section-upper-top .two-sections {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start
+}
+
+.section-inner .main-content-section.visits-main-page .main-content-section-inner .main-content-section-right .main-content-section-upper .main-content-section-upper-top .two-sections .left-section {
+    padding: 0;
+    list-style: none;
+    margin: 0
+}
+
+.section-inner .main-content-section.visits-main-page .main-content-section-inner .main-content-section-right .main-content-section-upper .main-content-section-upper-top .two-sections .left-section li {
+    font: 24px/29px Roboto_regular,sans-serif;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin-bottom: 15px
+}
+
+.section-inner .main-content-section.visits-main-page .main-content-section-inner .main-content-section-right .main-content-section-upper .main-content-section-upper-top .two-sections .left-section li img {
+    margin-right: 15px
+}
+
+.section-inner .main-content-section.visits-main-page .main-content-section-inner .main-content-section-right .main-content-section-upper .main-content-section-upper-top .two-sections .right-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    max-width: 50%;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%
+}
+
+.section-inner .main-content-section.visits-main-page .main-content-section-inner .main-content-section-right .main-content-section-upper .main-content-section-upper-top .two-sections .right-section .btn {
+    font: 18px/24px Roboto_regular,sans-serif;
+    max-width: 159px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 159px;
+    flex: 0 0 159px;
+    border-radius: 24px;
+    height: 48px
+}
+
+.section-inner .main-content-section.visits-main-page .main-content-section-inner .main-content-section-right .main-content-section-upper .main-content-section-upper-top .two-sections .right-section .btn:last-child {
+    background-color: #569CCB;
+    color: #fff;
+    margin-left: 38px
+}
+
+.section-inner .main-content-section.visits-main-page .main-content-section-inner .main-content-section-right .main-content-section-upper .main-content-section-upper-bottom {
+    padding: 54px 40px 46px 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.section-inner .main-content-section.visits-main-page .main-content-section-inner .main-content-section-right .main-content-section-upper .main-content-section-upper-bottom .profile-icon .main {
+    font: 22px/28px Roboto_regular,sans-serif;
+    color: var(--Primarycolor);
+    margin-bottom: 8px;
+    display: block
+}
+
+.section-inner .main-content-section.visits-main-page .main-content-section-inner .main-content-section-right .main-content-section-upper .main-content-section-upper-bottom .profile-icon .sub {
+    font: 18px/22px Roboto_medium,sans-serif;
+    color: #000
+}
+
+.section-inner .main-content-section.visits-main-page .main-content-section-inner .main-content-section-right .main-content-section-upper .main-content-section-upper-bottom .circle {
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    background: #8DC80E 0% 0% no-repeat padding-box;
+    -webkit-box-shadow: 0px 1px 8px #142E6E1A;
+    box-shadow: 0px 1px 8px #142E6E1A;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.section-inner .main-content-section.visits-main-page .main-content-section-inner .main-content-section-right .main-content-section-bottom {
+    height: 365px;
+    overflow: auto;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 26px 32px
+}
+
+.section-inner .main-content-section.visits-main-page .main-content-section-inner .main-content-section-right .main-content-section-bottom::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 2px
+}
+
+.section-inner .main-content-section.visits-main-page .main-content-section-inner .main-content-section-right .main-content-section-bottom::-webkit-scrollbar-track {
+    background: #fafafa
+}
+
+.section-inner .main-content-section.visits-main-page .main-content-section-inner .main-content-section-right .main-content-section-bottom::-webkit-scrollbar-thumb {
+    background: #bcbcbc
+}
+
+.section-inner .main-content-section.visits-main-page .main-content-section-inner .main-content-section-right .main-content-section-bottom h4 {
+    font: 16px/19px Roboto_regular,sans-serif;
+    margin-bottom: 12px
+}
+
+.section-inner .main-content-section.visits-main-page .main-content-section-inner .main-content-section-right .main-content-section-bottom table th {
+    font: 16px/19px Roboto_regular,sans-serif;
+    color: #9E9EA8
+}
+
+.section-inner .main-content-section.visits-main-page .main-content-section-inner .main-content-section-right .main-content-section-bottom table tbody tr {
+    border-bottom: 1px solid #eaeaea
+}
+
+.section-inner .main-content-section.visits-main-page .main-content-section-inner .main-content-section-right .main-content-section-bottom table td {
+    font: 14px/18px Roboto_regular,sans-serif;
+    color: #1B1B29;
+    padding: 10px 0
+}
+
+.section-inner .main-content-section.visits-main-page .main-content-section-inner .main-content-section-right .main-content-section-bottom table td:first-child {
+    color: var(--Primarycolor)
+}
+
+.section-inner .main-content-section.visits-main-page .main-content-section-inner .main-content-section-right .main-content-section-bottom table td span {
+    height: 38px;
+    width: 38px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    border-radius: 10px;
+    margin-right: 15px;
+    background-color: var(--Secondarycolor);
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center
+}
+
+.section-inner .main-content-section h2 {
+    font: 28px/40px Roboto_medium,sans-serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 25px
+}
+
+.section-inner .main-content-section h2 .white-box {
+    max-width: calc(100% - 372px);
+    width: 100%;
+    background-color: #fff;
+    height: 40px;
+    border-radius: 8px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: relative
+}
+
+.section-inner .main-content-section h2 .white-box .calender {
+    position: absolute;
+    right: 46px;
+    top: -2px
+}
+
+.section-inner .main-content-section h2 .white-box .date {
+    font: 14px/20px Roboto_regular,sans-serif;
+    color: var(--Primarycolor)
+}
+
+.section-inner .main-content-section h2 .white-box .date span {
+    display: inline-block;
+    margin: 0 22px
+}
+
+.section-inner .main-content-section h2 .white-box .date img {
+    cursor: pointer;
+    position: relative;
+    top: -1px
+}
+
+.section-inner .main-content-section .main-content-section-inner {
+    /* background-color: #fff; */
+    border-radius: 8px;
+    height: calc(100% - 88px);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-left {
+    max-width: 32%;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 32%;
+    flex: 0 0 32%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    -webkit-box-shadow: 0px 1px 8px #142E6E1A;
+    box-shadow: 0px 1px 8px #142E6E1A;
+    border-radius: 8px;
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-left #leftTab {
+    padding: 19px 24px 0 27px;
+    border: none;
+    margin-bottom: 10px
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-left #leftTab .nav-item {
+    max-width: 107px;
+    width: 100%
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-left #leftTab .nav-item:first-child .nav-link {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-left #leftTab .nav-item:first-child .nav-link.active {
+    border-radius: 8px 0 0 8px
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-left #leftTab .nav-item:last-child .nav-link {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-left #leftTab .nav-item:last-child .nav-link.active {
+    border-radius: 0px 8px 8px 0px
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-left #leftTab .nav-item .nav-link {
+    text-align: center;
+    border: none;
+    background-color: var(--Secondarycolor);
+    color: #2D7D00;
+    border-radius: 0
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-left #leftTab .nav-item .nav-link.active {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    -webkit-box-shadow: 0px 3px 6px #00000029;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 0px;
+    color: var(--Primarycolor)
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-left .doctors-listing {
+    padding: 0;
+    list-style: none;
+    height: 705px;
+    overflow: auto
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-left .doctors-listing::-webkit-scrollbar {
+    width: 5px;
+    border-radius: 2px
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-left .doctors-listing::-webkit-scrollbar-track {
+    background: #fafafa
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-left .doctors-listing::-webkit-scrollbar-thumb {
+    background: #bcbcbc
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-left .doctors-listing .doctors-list {
+    padding: 13px 22px 8.5px;
+    margin: 5px 2px 9px 2px;
+    border-radius: 8px;
+    cursor: pointer
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-left .doctors-listing .doctors-list:hover,.section-inner .main-content-section .main-content-section-inner .main-content-section-left .doctors-listing .doctors-list.active {
+    background-color: var(--Secondarycolor)
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-left .doctors-listing .doctors-list .profile-icon {
+    margin-bottom: 20.5px
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-left .doctors-listing .doctors-list .profile-icon .sub {
+    font: 16px/20px Roboto_medium,sans-serif
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-left .doctors-listing .doctors-list .profile-icon .main {
+    font: 14px/17px Roboto_regular,sans-serif;
+    color: var(--Primarycolor)
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-left .doctors-listing .doctors-list .time-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-left .doctors-listing .doctors-list .time-list span {
+    font: 14px/20px Roboto_regular,sans-serif
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-left .doctors-listing .doctors-list .time-list span img {
+    margin-right: 4px
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-left .doctors-listing .doctors-list .bottom-line {
+    width: 100%;
+    margin: 0 auto;
+    border-bottom: 2px dashed #A2C0D4;
+    display: block;
+    position: relative;
+    bottom: -17px
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right {
+    max-width: 68%;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 68%;
+    background-color: #FFF;
+    flex: 0 0 68%;
+    border-radius: 8px;
+    margin: 0 5px;
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner .header {
+    margin-bottom: 23px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    padding: 33px 93px 0 80px
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner .header .profile-icon .sub {
+    font: 16px/20px Roboto_medium,sans-serif
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner .header .profile-icon .main {
+    font: 14px/17px Roboto_regular,sans-serif;
+    color: var(--Primarycolor)
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner .header .case-status .main {
+    font: 16px/19px Roboto_medium,sans-serif;
+    display: inline-block;
+    margin-right: 10px;
+    color: var(--Primarycolor)
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner .header .case-status .sub {
+    font: 16px/19px Roboto_medium,sans-serif;
+    color: #8DC80E
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTab {
+    max-width: 694px;
+    margin: 0 auto;
+    background-color: var(--Secondarycolor);
+    border-radius: 31px;
+    padding: 10px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 10px
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTab .nav-item .nav-link {
+    font: 14px/21px Roboto_regular,sans-serif;
+    padding: 10px 30px;
+    color: #2D7D00
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTab .nav-item .nav-link.active {
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    -webkit-box-shadow: 0px 3px 3px #00000029;
+    box-shadow: 0px 3px 3px #00000029;
+    border-radius: 21px;
+    color: var(--Primarycolor)
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent {
+    height: 596px;
+    overflow: auto;
+    padding: 0 50px 33px 80px
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent::-webkit-scrollbar {
+    width: 3px;
+    border-radius: 2px
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent::-webkit-scrollbar-track {
+    background: #fafafa
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent::-webkit-scrollbar-thumb {
+    background: #bcbcbc
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent .sub-heading {
+    margin-top: 21px;
+    font: 13px/15px Roboto_bold,sans-serif;
+    color: #2D7D00;
+    border-bottom: 1px solid #F1F5F8;
+    padding-bottom: 10px;
+    margin-bottom: 10px
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent .sub-heading.alergy {
+    margin-bottom: 0
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent .symptoms-listing {
+    overflow-x: auto;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent .symptoms-listing#condition_qas {
+    height: 300px;
+    background: var(--Secondarycolor) 0% 0% no-repeat padding-box;
+    display: block;
+    border-radius: 20px;
+    padding: 15px
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent .symptoms-listing#condition_qas .symptoms-list {
+    background: #fff;
+    border-radius: 15px;
+    padding: 12px;
+    margin: 0 0 15px 0;
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent .symptoms-listing::-webkit-scrollbar {
+    width: 3px;
+    border-radius: 2px
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent .symptoms-listing::-webkit-scrollbar-track {
+    background: #fafafa
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent .symptoms-listing::-webkit-scrollbar-thumb {
+    background: #bcbcbc
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent .symptoms-listing .symptoms-listig-inner {
+    display: -webkit-inline-box;
+    overflow-x: auto;
+    margin-right: 16px
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent .symptoms-listing .symptoms-listig-inner::-webkit-scrollbar {
+    height: 3px
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent .symptoms-listing .symptoms-listig-inner::-webkit-scrollbar-track {
+    background: #fafafa
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent .symptoms-listing .symptoms-listig-inner::-webkit-scrollbar-thumb {
+    background: #bcbcbc
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent .symptoms-listing .symptoms-list {
+    position: relative;
+    width: auto;
+    /* min-width: 210px; */
+    border-radius: 6px;
+    background: var(--Secondarycolor) 0% 0% no-repeat padding-box;
+    margin: 0 7px;
+    padding: 9px;
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent .symptoms-listing .symptoms-list:first-child {
+    margin-left: 0
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent .symptoms-listing .symptoms-list:last-child {
+    margin-right: 0
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent .symptoms-listing .symptoms-list.image-uploader {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 120px !important;
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent .symptoms-listing .symptoms-list.image-uploader input {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    cursor: pointer
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent .symptoms-listing .symptoms-list.image-uploader img {
+    width: 50px !important;
+    height: 50px !important;
+    -o-object-fit: contain;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent .symptoms-listing .symptoms-list.image-uploader .sub {
+    text-align: center
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent .symptoms-listing .symptoms-list.image-uploader a {
+    cursor: pointer
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent .symptoms-listing .symptoms-list.image-uploader a:hover {
+    text-decoration: none
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent .symptoms-listing .symptoms-list span {
+    display: block;
+    color: var(--Primarycolor)
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent .symptoms-listing .symptoms-list span.main {
+    height: auto;
+    font: 15px/17px Roboto_medium,sans-serif;
+    margin-bottom: 20px;
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent .symptoms-listing .symptoms-list span.sub {
+    position: inherit;
+    bottom: 10px;
+    font: 14px/20px Roboto_regular,sans-serif;
+    font-weight: bold;
+    color: #212529
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent .diagnosis-data {
+    font: 16px/24px Roboto_regular,sans-serif;
+    color: var(--Primarycolor)
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent .vitals-listing {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0;
+    list-style: none
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent .vitals-listing .main {
+    font: 16px/27px Roboto_medium,sans-serif;
+    color: #8DC80E
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent .vitals-listing .sub {
+    display: block;
+    color: var(--Primarycolor);
+    font: 24px/38px Roboto_regular,sans-serif
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent .vitals-listing .sub small {
+    font: 16px/19px Roboto_regular,sans-serif
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent .alergies-listing {
+    padding: 0;
+    list-style: none
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent .alergies-listing .alergies-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    font: 16px/24px Roboto_regular,sans-serif;
+    color: var(--Primarycolor);
+    padding: 10px 0;
+    border-bottom: 1px solid #F1F5F8
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent .alergies-listing .alergies-list .main {
+    font-family: Roboto_medium,sans-serif
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent .alergies-listing .alergies-list:last-child {
+    border-bottom: none
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent #prescription .tagline {
+    font: 16px/24px Roboto_regular,sans-serif;
+    color: #2D7D00;
+    margin: 27px 0 35px
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent #prescription .prescription-detail {
+    padding: 0;
+    list-style: none;
+    background-color: var(--Secondarycolor);
+    border-radius: 11px
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent #prescription .prescription-detail .prescription-detail-list {
+    padding: 31px 69px 31px 85px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    border-bottom: 2px dashed #C2E0F7;
+    position: relative
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent #prescription .prescription-detail .prescription-detail-list .prescription-detail-list-inner {
+    overflow: hidden;
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent #prescription .prescription-detail .prescription-detail-list .prescription-detail-list-inner .two-sections {
+    overflow-x: auto;
+    padding-bottom: 10px
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent #prescription .prescription-detail .prescription-detail-list .prescription-detail-list-inner .two-sections::-webkit-scrollbar {
+    height: 5px;
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent #prescription .prescription-detail .prescription-detail-list .prescription-detail-list-inner .two-sections::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent #prescription .prescription-detail .prescription-detail-list .prescription-detail-list-inner .two-sections::-webkit-scrollbar-thumb {
+    background: #c4c4c4;
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent #prescription .prescription-detail .prescription-detail-list .prescription-detail-list-inner .two-sections .left {
+    min-width: 20%;
+}
+
+.sub-parent {
+    margin-top: 8px;
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent #prescription .prescription-detail .prescription-detail-list .circle {
+    height: 30px;
+    width: 30px;
+    background-color: #fff;
+    border-radius: 50px;
+    position: absolute;
+    bottom: -15px
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent #prescription .prescription-detail .prescription-detail-list .circle.circle-left {
+    left: -15px;
+    display: none;
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent #prescription .prescription-detail .prescription-detail-list .circle.circle-right {
+    right: -15px;
+    display: none;
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent #prescription .prescription-detail .prescription-detail-list:last-child {
+    border-bottom: none;
+    height: 220px;
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent #prescription .prescription-detail .prescription-detail-list img {
+    margin-right: 20px
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent #prescription .prescription-detail .prescription-detail-list h4 {
+    font: 20px/24px Roboto_regular,sans-serif;
+    color: #2D7D00;
+    margin-bottom: 21px
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent #prescription .prescription-detail .prescription-detail-list .two-sections {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent #prescription .prescription-detail .prescription-detail-list .two-sections .left {
+    margin-right: 15px
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent #prescription .prescription-detail .prescription-detail-list .two-sections .main {
+    font: 16px/19px Roboto_regular,sans-serif;
+    color: #90A1AC
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent #prescription .prescription-detail .prescription-detail-list .two-sections .sub {
+    font: 18px/22px Roboto_regular,sans-serif;
+    color: #8DC80E;
+    display: block;
+    margin: 5px 0 21px;
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent #prescription .prescription-detail .prescription-detail-list .two-sections .white {
+    white-space: nowrap;
+    width: 150px
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent #provider .provider-header {
+    margin-top: 21px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent #provider .form-group {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 0;
+    background: var(--Secondarycolor) 0% 0% no-repeat padding-box;
+    -webkit-box-shadow: 0px 3px 3px #C1CFD933;
+    box-shadow: 0px 3px 3px #C1CFD933;
+    border-radius: 10px;
+    padding: 21px 37px
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent #provider .provider-header img {
+    margin-right: 44px
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent #provider .form-group.mb15 {
+    margin-bottom: 15px
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent #provider .form-group label {
+    font: 18px/22px Roboto_regular,sans-serif;
+    color: #2D7D00;
+    margin: 0 42px 0 0
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent #provider .form-group textarea,.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent #provider .form-group input {
+    border: none;
+    padding: 0;
+    font: 18px/22px Roboto_regular,sans-serif;
+    color: #8DC80E;
+    height: auto;
+    margin: 0;
+    background-color: transparent
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent #provider h2 {
+    font: 20px/24px Roboto_medium,sans-serif;
+    margin: 30px 0 9px;
+    color: var(--Primarycolor)
+}
+
+@media (max-width: 1450px) {
+    .section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent #prescription .prescription-detail .prescription-detail-list .two-sections .sub {
+        font:16px/22px Roboto_regular,sans-serif
+    }
+}
+
+@media (max-width: 1366px) {
+    .section-inner .main-content-section.visits-main-page .main-content-section-inner .main-content-section-right {
+        padding-left:32px
+    }
+
+    .section-inner .main-content-section.visits-main-page .main-content-section-inner .main-content-section-right .main-content-section-upper .main-content-section-upper-top .two-sections .right-section .btn {
+        max-width: 120px
+    }
+
+    .section-inner .main-content-section.visits-main-page .main-content-section-inner .main-content-section-right .main-content-section-upper .main-content-section-upper-top .two-sections .left-section li {
+        font-size: 20px
+    }
+
+    .section-inner .main-content-section.visits-main-page .main-content-section-inner .main-content-section-right .main-content-section-upper .main-content-section-upper-bottom {
+        padding: 54px 20px 46px 20px
+    }
+
+    .section-inner .main-content-section.visits-main-page .main-content-section-inner .main-content-section-right .main-content-section-upper .main-content-section-upper-bottom .profile-icon .main {
+        font-size: 14px
+    }
+
+    .section-inner .main-content-section.visits-main-page .main-content-section-inner .main-content-section-right .main-content-section-upper .main-content-section-upper-bottom .profile-icon .sub {
+        font-size: 13px
+    }
+
+    .section-inner .main-content-section.visits-main-page .main-content-section-inner .main-content-section-right .main-content-section-upper .main-content-section-upper-bottom .btn.green {
+        max-width: 165px
+    }
+
+    .section-inner .main-content-section .main-content-section-inner .main-content-section-left #leftTab .nav-item {
+        max-width: 33.33%
+    }
+
+    .section-inner .main-content-section .main-content-section-inner .main-content-section-left .doctors-listing {
+        margin-bottom: 30px
+    }
+
+    .section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTab {
+        max-width: 600px
+    }
+
+    .section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent .symptoms-listing .symptoms-list {
+        width: auto;
+        /* min-width: 270px; */
+    }
+
+    .section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent #prescription .prescription-detail .prescription-detail-list {
+        padding: 31px 40px
+    }
+
+    .section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent #prescription .prescription-detail .prescription-detail-list .two-sections .sub {
+        font: 14px/20px Roboto_regular,sans-serif;
+        /* height:200px */
+    }
+}
+
+@media (max-width: 1280px) {
+    .section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent #prescription .prescription-detail .prescription-detail-list .two-sections .white {
+        white-space:unset;
+        width: auto
+    }
+
+    .section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent #prescription .prescription-detail .prescription-detail-list .two-sections .sub {
+        /* height:140px */
+    }
+}
+
+@media (max-width: 1199px) {
+    .section-inner .main-content-section.visits-main-page {
+        padding:0 20px 0 15px
+    }
+
+    .section-inner .main-content-section.visits-main-page .main-content-section-inner .main-content-section-right {
+        padding-left: 15px
+    }
+
+    .section-inner .main-content-section.visits-main-page .main-content-section-inner .main-content-section-right .main-content-section-upper .main-content-section-upper-top .two-sections .right-section {
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end
+    }
+
+    .section-inner .main-content-section.visits-main-page .main-content-section-inner .main-content-section-right .main-content-section-upper .main-content-section-upper-top .two-sections .right-section .btn {
+        font-size: 14px;
+        max-width: 90px;
+        padding: 10px;
+        height: 32px
+    }
+
+    .section-inner .main-content-section.visits-main-page .main-content-section-inner .main-content-section-right .main-content-section-upper .main-content-section-upper-top .two-sections .right-section .btn:last-child {
+        margin-left: 10px
+    }
+
+    .section-inner .main-content-section.visits-main-page .main-content-section-inner .main-content-section-right .main-content-section-upper .main-content-section-upper-top .two-sections .left-section li {
+        font-size: 18px
+    }
+
+    .section-inner .main-content-section.visits-main-page .main-content-section-inner .main-content-section-right .main-content-section-upper .main-content-section-upper-bottom .profile-icon {
+        padding-right: 10px
+    }
+
+    .section-inner .main-content-section.visits-main-page .main-content-section-inner .main-content-section-right .main-content-section-upper .main-content-section-upper-bottom .profile-icon img {
+        margin-right: 0;
+        width: 90px;
+        height: 90px
+    }
+
+    .section-inner .main-content-section.visits-main-page .main-content-section-inner .main-content-section-right .main-content-section-upper .main-content-section-upper-bottom .btn.green {
+        font-size: 12px;
+        max-width: 145px
+    }
+
+    .section-inner .main-content-section.visits-main-page .main-content-section-inner .main-content-section-right .main-content-section-bottom table {
+        overflow-x: auto;
+        white-space: nowrap;
+        display: block
+    }
+
+    .section-inner .main-content-section.visits-main-page .main-content-section-inner .main-content-section-right .main-content-section-bottom table td,.section-inner .main-content-section.visits-main-page .main-content-section-inner .main-content-section-right .main-content-section-bottom table th {
+        padding: 10px
+    }
+
+    .section-inner .main-content-section.visits-main-page .main-content-section-inner .main-content-section-right .main-content-section-bottom table::-webkit-scrollbar {
+        height: 5px;
+        border-radius: 2px
+    }
+
+    .section-inner .main-content-section.visits-main-page .main-content-section-inner .main-content-section-right .main-content-section-bottom table::-webkit-scrollbar-track {
+        background: #fafafa
+    }
+
+    .section-inner .main-content-section.visits-main-page .main-content-section-inner .main-content-section-right .main-content-section-bottom table::-webkit-scrollbar-thumb {
+        background: #bcbcbc
+    }
+
+    .section-inner .main-content-section .main-content-section-inner .main-content-section-left #leftTab .nav-item .nav-link {
+        padding: 10px 5px
+    }
+
+    .section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner .header {
+        padding: 33px 30px 0 30px
+    }
+
+    .section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTab {
+        max-width: 100%;
+        margin: 0 30px
+    }
+
+    .section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTab .nav-item .nav-link {
+        padding: 10px
+    }
+
+    .section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent {
+        padding: 0 30px 33px 30px
+    }
+
+    .section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent #prescription .prescription-detail .prescription-detail-list {
+        padding: 31px 40px
+    }
+}
+
+@media (max-width: 1024px) {
+    .section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent #prescription .prescription-detail .prescription-detail-list .two-sections .sub {
+        height:180px
+    }
+
+    .section-inner .main-content-section {
+        max-width: 100%
+    }
+
+    .section-inner .main-content-section.visits-main-page {
+        max-width: calc(100% - 55px)
+    }
+}
+
+@media (max-width: 991px) {
+    .section-inner .main-content-section.visits-main-page {
+        max-width:calc(100% - 55px)
+    }
+
+    .section-inner .main-content-section.visits-main-page .main-content-section-inner .main-content-section-right .main-content-section-upper .main-content-section-upper-top {
+        padding: 20px 15px 0
+    }
+
+    .section-inner .main-content-section.visits-main-page .main-content-section-inner .main-content-section-right .main-content-section-upper .main-content-section-upper-top h3 {
+        font-size: 20px
+    }
+
+    .section-inner .main-content-section.visits-main-page .main-content-section-inner .main-content-section-right .main-content-section-upper .main-content-section-upper-top .two-sections .left-section li {
+        font-size: 16px
+    }
+
+    .section-inner .main-content-section.visits-main-page .main-content-section-inner .main-content-section-right .main-content-section-upper .main-content-section-upper-bottom {
+        padding: 24px 15px 20px 10px
+    }
+
+    .section-inner .main-content-section.visits-main-page .main-content-section-inner .main-content-section-right .main-content-section-upper .main-content-section-upper-bottom .profile-icon .main {
+        font-size: 12px
+    }
+
+    .section-inner .main-content-section.visits-main-page .main-content-section-inner .main-content-section-right .main-content-section-upper .main-content-section-upper-bottom .profile-icon .sub {
+        font-size: 11px
+    }
+
+    .section-inner .main-content-section.visits-main-page .main-content-section-inner .main-content-section-right .main-content-section-upper .main-content-section-upper-bottom .btn.green {
+        font-size: 10px;
+        max-width: 135px
+    }
+
+    .section-inner .main-content-section.visits-main-page .main-content-section-inner .main-content-section-right .main-content-section-upper .main-content-section-bottom {
+        padding: 16px 32px
+    }
+
+    .section-inner .main-content-section h2 .white-box {
+        max-width: calc(100% - 200px)
+    }
+
+    .section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner .header {
+        padding: 33px 15px 0 15px
+    }
+
+    .section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner .header .case-status .main {
+        font: 13px/19px Roboto_medium,sans-serif;
+        margin-right: 4px
+    }
+
+    .section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner .header .case-status .sub {
+        font: 13px/19px Roboto_medium,sans-serif
+    }
+
+    .section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTab {
+        margin: 0 10px
+    }
+
+    .section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent {
+        padding: 0 20px 33px 20px
+    }
+
+    .section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent .symptoms-listing .symptoms-list {
+        padding: 5px;
+        width: 150px;
+        min-width: 150px;
+    }
+
+    .section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent .symptoms-listing .symptoms-list span.main {
+        font: 13px/15px Roboto_medium,sans-serif
+    }
+
+    .section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent .symptoms-listing .symptoms-list span.sub {
+        font: 12px/20px Roboto_regular,sans-serif
+    }
+
+    .section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent #prescription .prescription-detail .prescription-detail-list {
+        padding: 20px 15px
+    }
+
+    .section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent #prescription .prescription-detail .prescription-detail-list .two-sections .sub {
+        height: 230px
+    }
+
+    .section-inner .main-content-section .main-content-section-inner .main-content-section-left #leftTab {
+        padding: 12px 12px 0 12px
+    }
+
+    .section-inner .main-content-section .main-content-section-inner .main-content-section-left #leftTab .nav-item .nav-link {
+        font-size: 14px
+    }
+
+    .section-inner .main-content-section .main-content-section-inner .main-content-section-left .doctors-listing .doctors-list {
+        padding: 13px 12px 8.5px
+    }
+
+    .section-inner .main-content-section .main-content-section-inner .main-content-section-left .doctors-listing .doctors-list .profile-icon img {
+        margin-right: 7px;
+        width: 36px;
+        height: 36px
+    }
+}
+
+.section-inner .main-content-section .main-content-section-inner .main-content-section-right .main-content-section-right-inner #rightTabContent #prescription .prescription-detail .prescription-detail-list button {
+    background: transparent;
+    border: none;
+    background-color: #2D7D00;
+    color: #fff;
+    border-radius: 20px;
+    padding: 5px 20px;
+}
+
+.refillButtonClass {
+    position: absolute;
+    right: 40px;
+    top: 30px;
+}
+
+.refillButtonClass:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+#RefillPopupModal {
+    background: rgba(0,0,0,0.5);
+}
+
+.modal-backdrop {
+    display: none;
+}
+
+#RefillPopupModal .modal-content {
+    background: #f7f7f7;
+}
+
+#RefillPopupModal .modal-content .modal-body {
+    text-align: left;
+    font-weight: normal;
+    color: var(--Bodytextcolor);
+}
+
+#RefillPopupModal .modal-content .modal-body .card-heading {
+    justify-content: center;
+}
+
+#medicalChange-error {
+    color: red;
+    font-size: 12px;
+}
+
+#refillResponse {
+    position: absolute;
+    top: 10px;
+    right: 2544%;
+    font-size: 20px;
+    font-weight: bold;
+    color: #2D7D00;
+}
+
+.newRefillButton {
+    opacity: 0.5;
+    cursor: not-allowed !important;
+}

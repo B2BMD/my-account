@@ -1,0 +1,366 @@
+@import "./style-components/common";
+
+.common-pages{
+    header{
+        .navbar{
+            align-items: flex-end;
+            padding: 32px 102px 44px 40px;
+            .navbar-brand{
+                margin-right: 33px;
+            }
+            .form-inline{
+                display: flex;
+                align-items: center;
+            }
+            .bell-icon{
+                margin: 0 32px 0 52px;
+                cursor: pointer;
+            }
+           
+        }
+    }
+    .profile-icon{
+        display: flex;
+        align-items: center;
+        img{
+            margin-right: 20px;
+        }
+        .main{
+            font: 16px/20px $Roboto_medium;
+           
+            margin-bottom: 0;
+        }
+        .sub{
+            font: 10px/20px $Roboto_regular;
+            display: block;
+        }
+    }
+}
+.section-inner{
+    display: flex;
+  
+    .main-content-section{
+        padding: 0 41px 0 15px;
+        max-width: calc(100% - 205px);
+        width: 100%;
+        h2{
+            font: 28px/40px $Roboto_medium;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 64px;
+        }
+        .main-content-section-inner{
+            height: calc(100% - 88px);
+            display: flex;
+            
+        }
+        &.message-page{
+            h2{
+                font: 28px/33px $Roboto_medium;
+                margin-bottom: 23px;
+            }
+            .main-content-section-inner{
+                .left-side-users{
+                    padding-bottom: 56px;
+                    background-color: #ffffff;
+                    border-radius: 8px;
+                    max-width: 30%;
+                    flex: 0 0 30%;
+                    .contact-list{
+
+                        width: 100%;
+                        padding: 2px;
+                        margin: 0;
+                        filter: drop-shadow(0 1px 8px #142E6E1A);
+                        li{
+                            list-style: none;
+                            padding: 20px 24px;
+                            border-bottom: 1px solid #F1F5F8;
+                            border-radius: 8px;
+                            &:hover{
+                                background-color: #E5F6E8;
+                            }
+                            a{
+                                border-radius: 8px;
+                                text-decoration: none;
+                                display: block;
+                                min-width: 374px;
+                                .user{
+                                    display: flex;
+                                    align-items: center;
+                                    img{
+                                        margin-right: 20px;
+                                    }
+                                    .text{
+                                        .name{
+                                            font: 16px/20px $Roboto_medium;
+                                            color: var(--Primarycolor);
+                                            margin: 0;
+                                            .category{
+                                                font: 14px/20px $Roboto_regular;
+                                                color: #414D55;
+                                                display: block;
+                                                margin-top: 3px;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .right-side-chatbox{
+                    margin-left: 24px;
+                    max-width: 70%;
+                    flex: 0 0 70%;
+                    background-color: $gray-0-ffffff;
+                    border-radius: 8px;
+                    filter: drop-shadow(0 1px 8px #142E6E1A);
+                    .topbar{
+                        padding: 20px 24px;
+                        border-bottom: 1px solid #142E6E1A;
+                        .content{
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            .left{
+                                display: flex;
+                                align-items: center;
+                                h2{
+                                    color: var(--Primarycolor);
+                                    font: 20px/24px $Roboto_medium;
+                                    margin: 0;
+                                }
+                                img.pic{
+                                    margin-right: 20px;
+                                }
+                            }
+                            .right{
+                                display: flex;
+                                .btn{
+                                    background-color: $gray-0-ffffff;
+                                    color: var(--Primarycolor);
+                                    border: none;
+                                    filter: drop-shadow(0 1px 8px #142E6E1A);
+                                    white-space: nowrap;
+                                    padding: 13px;
+                                    font: 14px/17px $Roboto_regular;
+                                    height: 40px;
+                                    &.view-detail{
+                                        margin-right: 30px;
+                                        padding: 12px 28px;
+                                    }
+                                    &.call-btn{
+                                        margin-right: 17px;
+                                    }
+                                    &.video-call-btn{
+                                        padding: 12px 10px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .messages-box{
+                        .day{
+                            position: relative;
+                            display: flex;
+                            margin: 30px auto 23px;
+                            p{
+                                font: 10px/12px $Roboto_medium;
+                                margin: 0;
+                                margin-left: 17px;
+                                display: inline-block;
+                                z-index: 2;
+                                background-color: $gray-0-ffffff;
+                                padding: 4px 8px;
+                            }
+                            &::after{
+                                content: '';
+                                position: absolute;
+                                top: 50%;
+                                left: 0;
+                                transform: translateY(-50%);
+                                width: 100%;
+                                border: 1px dashed #A2C0D4;
+                            }
+                        }
+                        .message-inner{
+                            padding: 0 24px;
+                            .message-inne-inner{
+                                overflow-y: auto;
+                                max-height: 540px;
+                                height: auto;
+                                min-height: 100px;
+                                padding-right: 10px;
+                                &::-webkit-scrollbar {
+                                    width: 5px;
+                                }
+                                
+                                &::-webkit-scrollbar-track {
+                                    background: transparent;
+                                }
+                                
+                                &::-webkit-scrollbar-thumb {
+                                    background: #c4c4c4;
+                                }
+                            }
+                            .message{
+                                margin-bottom: 23px;
+                                display: flex;
+                                flex-direction: column;
+                                .time{
+                                    font: 12px/14px $Roboto_regular;
+                                    color: #90A1AC;
+                                    margin-bottom: 3px;
+                                    span{
+                                        display: inline-block;
+                                        margin-left: 9px;
+                                        font: 12px/14px $Roboto_regular;
+                                        color: #90A1AC;
+                                    }
+                                }
+                                .textbox{
+                                    max-width: 385px;
+                                    .text{
+                                        font: 16px/20px $Roboto_regular;
+                                        color: $gray-0-ffffff;
+                                        background-color: var(--Primarycolor);
+                                        padding: 11px 12px 9px;
+                                        display: inline-block;
+                                        border-radius: 8px;
+                                        margin: 0;
+                                    }
+                                }
+                                &.me{
+                                    align-items: flex-end;
+                                    .textbox{
+                                        max-width: 448px;
+                                        .text{
+                                            background-color: #8DC80E;
+                                        }
+                                    }
+                                }
+                                &.me-first{padding-top: 23px;}
+                            }
+                            .send-box{
+                                position: absolute;
+                                width: 100%;
+                                left: 0;
+                                bottom: 0;
+                                padding: 7px 24px;
+                                .inner{
+                                    border-top: 2px solid #F1F5F8;
+                                    position: relative;
+                                    bottom: 0;
+                                    height: 80px;
+                                    .send-input{
+                                        font: 18px/22px $Roboto_regular;
+                                        border: none;
+                                        outline: none;
+                                        box-shadow: none;
+                                        height: 100%;
+                                        &::placeholder{
+                                            color: #8DC80E;
+                                            opacity: .5;
+                                        }
+                                    }
+                                    .send-btn{
+                                        position: absolute;
+                                        top: 50%;
+                                        transform: translateY(-50%);
+                                        right: 0;
+                                        display: inline-block;
+                                        width: auto;
+                                        background-color: transparent;
+                                        padding: 5px;
+                                        border: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width: 1366px){
+    .section-inner{
+        .main-content-section.message-page{
+            max-width: calc(100% - 218px);
+            .main-content-section-inner{
+                .left-side-users{
+                    max-width: 30%;
+                }
+                .right-side-chatbox{
+                    max-width: 67%;
+                }
+            }
+        }
+    }
+}
+@media(max-width: 1199px){
+    .section-inner{
+        .main-content-section.message-page{
+            max-width: calc(100% - 175px);
+            .main-content-section-inner {
+                .left-side-users {
+                    .contact-list {
+                        li {
+                            a {
+                                .user {
+                                    img{
+                                        margin-right: 10px;
+                                        width: 36px;
+                                        height: 36px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .right-side-chatbox {
+                    .messages-box {
+                        .message-inner{
+                            margin-bottom: 40px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media(max-width: 1024px){
+    .section-inner{
+        .main-content-section.message-page{
+            max-width: calc(100% - 150px);
+        }
+    }
+}
+@media(max-width: 991px){
+    .section-inner{
+        .main-content-section.message-page{
+            max-width: calc(100% - 55px);
+            .main-content-section-inner {
+                .left-side-users {
+                    .contact-list {
+                        li{
+                            padding: 15px 10px;
+                        }
+                    }
+                }
+                .right-side-chatbox {
+                    .topbar{
+                        padding: 15px 10px;
+                        .content{
+                            display: block;
+                            .left{
+                                margin-bottom: 15px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
